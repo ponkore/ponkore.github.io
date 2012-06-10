@@ -29,6 +29,10 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+/*+ override @ponkore */
+pre, code, kbd, samp { color: #fff; padding: 0.2em; }
+article { line-height: 1.4em; }
+/*- override */
 q { quotes: none; }
 q:before, q:after { content: ""; content: none; }
 small { font-size: 85%; }
@@ -73,7 +77,8 @@ td { vertical-align: top; }
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+/* @ponkore body{ font:16px/26px Helvetica, Helvetica Neue, Arial; } */
+body{ font:85% Helvetica, Helvetica Neue, Arial; }
 
 .wrapper{
 	width:90%;
@@ -138,14 +143,18 @@ nav a:hover{
 
 #main aside{
 	color:white;
-	padding:0px 5% 10px;
+	padding:0px 2% 10px;
 }
 
 #footer-container footer{
 	color:white;
-	padding:20px 0;
+	padding:0.5em 0;
 }
 
+#footer-container img{
+	background:white;
+	padding:0.5em 0.5em 0.5em 0.5em;
+}
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -154,19 +163,48 @@ nav a:hover{
 
 
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: @ponkore
    ========================================================================== */
+/* post page header */
+.page-header{
+     margin: 1em 0 1.5em 0;
+	 border-bottom: 2px solid #000;
+	 overflow: hidden;
+}
+.page-header h1 { font-weight: normal; font-size: 2em; float: left; margin: 0.5em 0 0 0; }
+.page-header p { float: right; margin: 2em 0 0 2em; }
+.page-header .post-date { float: right; }
+.page-header .tag ul { float: right; list-style: none; }
+.page-header .tag li { float: left; margin: 0.5em 0 0 0; }
 
+.section-title       { font-size: 1.6em; margin: 0 0 1em 0; border-bottom: 2px solid #aaa; }
+.subsection-title    { font-size: 1.4em; margin: 0 0 1em 0; border-bottom: 2px solid #aaa; }
+.subsubsection-title { font-size: 1.2em; margin: 0 0 1em 0; border-bottom: 2px solid #aaa; }
 
+.section       { margin: 0 0 1em 0; }
+.subsection    { margin: 0 0 1em 0; }
+.subsubsection { margin: 0 0 1em 0; }
 
-
-
-
-
-
-
-
-
+/* sidebar */
+aside{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+aside img {
+	float: left;
+	}
+aside .profile-info {
+/*
+	border-bottom: 1px solid #000;
+	border-top:    1px solid #000;
+	border-right:  1px solid #000;
+	border-left:   1px solid #000; */
+	margin-left: 5em;
+}
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -232,7 +270,7 @@ nav a:hover{
 
 	#main article{
 		float:left;
-		width:57%;
+		width:66%;
 	}
 		
 	#main aside{

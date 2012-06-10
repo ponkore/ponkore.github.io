@@ -1,35 +1,36 @@
 ;; Define template options here
 ; @layout  default
-; @title   misaki
+; @title   my first page
 
 ;; You can define your function in template
 (defn page-header [[fs & rs]]
   [:div {:class "page-header"}
    [:h1 [:span fs] rs]])
 
-;; Template is compiled with hiccup
-[:header
- [:h1 (link (:title site) "/")]
- [:p (link "Jekyll" "https://github.com/mojombo/jekyll")
-  " inspired static site generator in Clojure"]]
+[:article
+ ;; Template is compiled with hiccup
+ [:header
+  [:h1 (link (:title site) "/")]
+  [:p (link "Jekyll" "https://github.com/mojombo/jekyll")
+   " inspired static site generator in Clojure"]]
 
-;; Sample posts
-(page-header "Sample posts")
-(ul
+ ;; Sample posts
+ (page-header "Sample posts")
+ (ul
   #(link (:title %) (:url %))
   (:posts site))
 
-;; Sample post tags
-(page-header "Sample tags")
-(ul
+ ;; Sample post tags
+ (page-header "Sample tags")
+ (ul
   #(link (str (:name %) " (" (:count %) ")")
-              (:url %))
+         (:url %))
   (:tags site))
 
-;; Template source
-(page-header "Template source")
-[:p "you can highlight your code with "
- (link "google-code-prettify" "http://code.google.com/p/google-code-prettify/")]
+ ;; Template source
+ (page-header "Template source")
+ [:p "you can highlight your code with "
+  (link "google-code-prettify" "http://code.google.com/p/google-code-prettify/")]
 #-CLOJURE
 ;; Define template options here
 ; @layout  default
@@ -75,3 +76,4 @@ CLOJURE
 (page-header "Document")
 [:p "See " (link "github Wiki" "https://github.com/liquidz/misaki/wiki") "."]
 
+]
