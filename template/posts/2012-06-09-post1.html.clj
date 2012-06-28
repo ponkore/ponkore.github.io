@@ -4,8 +4,8 @@
 
 (section
  "Sample Components"
- (subsection
-  "Link"
+ [:div {:class "subsection"}
+  [:h2 "Link"]
 #-CLJ
 (link "label" "http://localhost/")
 (link "http://localhost/")
@@ -16,17 +16,17 @@ CLJ
    (link "http://localhost/")
    [:br]
    (link "`code`" "http://localhost/")
-   )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "Unordered list"
 #-CLJ
 (ul (range 3))
 CLJ
    (ul (range 3))
-   )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "Definition list"
 #-CLJ
 (dl {:a 1, :b 2})
@@ -34,9 +34,9 @@ CLJ
 CLJ
    (dl {:a 1, :b 2})
    (dl [:hello "world" :foo "`bar`"])
-   )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "Block quote"
 #-CLJ
 (blockquote
@@ -48,17 +48,17 @@ CLJ
     "foo
     bar"
     [:a {:href "#"} "baz"])
-  )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "Inline code"
 #-CLJ
 (code "clojure.core/+")
 CLJ
    (code "clojure.core/+")
-   )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "Source code"
   [:p "Comment out following code."]
 #-CLOJURE
@@ -71,9 +71,9 @@ CLOJURE
 (let [msg "world"]
   (println "hello," msg))
 CLJ
-   )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "Paragraph"
 #-CLJ
 (p "hello, world")
@@ -81,19 +81,19 @@ CLJ
 CLJ
    (p "hello, world")
    (p "paragraph with `inline` code")
-  )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "JavaScript"
 #-CLJ
 (js "a.js" "b.js")
 CLJ
-  )
+ ]
 
- (subsection
+ [:div {:class "subsection"}
   "Style Sheet"
 #-CLJ
 (css "a.css" "b.css")
 CLJ
-  )
- ) ;; <!-- section -->
+ ]
+) ;; <!-- section -->

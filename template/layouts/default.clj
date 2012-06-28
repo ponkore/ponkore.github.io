@@ -43,7 +43,9 @@
  [:meta {:charset "UTF-8"}]
  [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
 
- [:title (str (:site-title site) " " (:title site))]
+ [:title (if (= (:title site) "home")
+           (:site-title site)
+           (str (:site-title site) " - " (:title site)))]
 
  [:meta {:name "description" :content "This is @ponkore's blog."}]
  [:meta {:name "author" :content "@ponkore"}]
@@ -55,7 +57,7 @@
 
  [:link {:href  "/atom.xml"
          :rel   "alternate"
-         :title (str (:site-title site) "-" (:title site))
+         :title (:title site)
          :type  "application/atom-xml"}]
 
  (css

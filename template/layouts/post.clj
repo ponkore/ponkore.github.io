@@ -3,7 +3,7 @@
 
 ;;; ダサいのであとでちゃんと考えよう
 (defn post-date [date]
-  (str (conv/year date) "/" (conv/month date) "/" (conv/day date)))
+  (str (year date) "/" (month date) "/" (day date)))
 
 (defn section [title & contents]
   [:div {:class "section"}
@@ -19,6 +19,15 @@
   [:div {:class "subsubsection"}
    [:span {:class "subsubsection-title"} title]
    contents])
+
+(def ^:dynamic *footnote-no* (ref 0))
+(def ^:dynamic *footnotes* (ref ""))
+
+;(defn footnote [script note]
+;  (dosync
+;   ()))
+
+;(defn write-footnotes [] "")
 
 [:article
  ; page header
