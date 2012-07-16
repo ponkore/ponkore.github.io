@@ -6,6 +6,13 @@
  :post-dir     "posts/"
  :layout-dir   "layouts/"
 
+ ;; posts and tags url setting
+ ;;   default value: "/"
+ ;;   ex)
+ ;;     "/"    => "/YYYY-MM/POST.html"
+ ;;     "/foo" => "/foo/YYYY-MM/POST.html"
+ :url-base     "/"
+
  ;; dev server port
  ;;   default value: 8080
  :port 8080
@@ -15,8 +22,11 @@
  :lang "ja"
 
  ;; default site data
- :site {:site-title "(life :with :-)"
+ :site {:charset    "utf-8"
+        :site-title "(life :with-parenthesis)"
+        :twitter    "ponkore"
         :css ["/css/main.css"]
+        :device-css ["/css/smartphone.css"]
         :js ["/js/main.js"]}
 
  ;; post file compile hook
