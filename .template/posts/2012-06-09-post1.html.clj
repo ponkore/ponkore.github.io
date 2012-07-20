@@ -2,6 +2,11 @@
 ; @title   Sample components
 ; @tag     tag1 tag2
 
+(section
+ "はじめに"
+ "このページは、misakiで使う記法について簡単に解説しています。"
+ )
+
 (section "Link"
 #-CLJ
 (link "label" "http://localhost/")

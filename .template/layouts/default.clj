@@ -33,8 +33,8 @@
  [:meta {:charset (:charset site)}]
  [:meta {:name "viewport" :content "width=device-width"}]
  [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
- [:meta {:name "description" :content "This is @ponkore's blog."}]
- [:meta {:name "author" :content "@ponkore"}]
+ [:meta {:name "description" :content (:site-meta-description site)}]
+ [:meta {:name "author" :content (:site-meta-author site)}]
 
  [:title (if (= (:title site) "home")
            (:site-title site)

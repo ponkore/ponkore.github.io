@@ -1,8 +1,8 @@
 {
  ;; directory setting
- :public-dir   "public/"
+ :public-dir   "./"
  :tag-out-dir  "tag/"
- :template-dir "template/"
+ :template-dir ".template/"
  :post-dir     "posts/"
  :layout-dir   "layouts/"
 
@@ -24,7 +24,11 @@
  ;; default site data
  :site {:charset    "utf-8"
         :site-title "(life :with-parenthesis)"
+        :site-meta-description "This is @ponkore's blog"
+        :site-meta-author "@ponkore"
+        :site-url "http://ponkore.github.com"
         :twitter    "ponkore"
+        :disqus-shortname "ponkoresblog"
         :css ["/css/main.css"]
         :device-css ["/css/smartphone.css"]
         :js ["/js/main.js"]}
