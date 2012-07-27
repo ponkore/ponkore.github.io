@@ -32,6 +32,8 @@
 [:head
  [:meta {:charset (:charset site)}]
  [:meta {:name "viewport" :content "width=device-width"}]
+ [:meta {:http-equiv "Content-Language" :content "ja"}]
+ [:meta {:http-equiv "Content-Type" :content "text/html; charset=UTF-8"}]
  [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
  [:meta {:name "description" :content (:site-meta-description site)}]
  [:meta {:name "author" :content (:site-meta-author site)}]
