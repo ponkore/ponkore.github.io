@@ -9,41 +9,7 @@
    [:span {:class "section-title"} section-title]
    [:br] ;; TODO: <br> ではなく section-title の下余白を取るべき
    contents])
-;;; facebook button
-(defn facebook-like-button
-  "facebook like button"
-  [site]
-  [:iframe {:src "http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fponkore.github.com%2Fi&layout=standard&show_faces=true&width=300&action=like&colorscheme=light&height=80"
-            :scrolling "no"
-            :frameborder "0"
-            :style "border:none; overflow:hidden; width:300px; height:80px;"
-            :allowTransparency "true"}])
-;;; Tumblr+ ボタン
-(defn tumblr-like-button
-  "Tumblr like button"
-  [site]
- [:a {:href "http://www.tumblr.com/share"
-      :title "Share on Tumblr"
-      :style "display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;"}
-  "Share on Tumblr"])
-;;; hatena bookmark button
-(defn hatena-bookmark-button
-  [site]
-  "hatena bookmark button"
-  [:a {:href (str "http://b.hatena.ne.jp/entry/" (:site-url site))
-       :class "hatena-bookmark-button"
-       :data-hatena-bookmark-title (site :title)
-       :data-hatena-bookmark-layout "standard"
-       :title "このエントリーをはてなブックマークに追加"}
-   [:img {:href "http://b.st-hatena.com/images/entry-button/button-only.gif"
-          :alt "このエントリーをはてなブックマークに追加"
-          :width "20"
-          :height "20"
-          :style "border: none;"}]]
-  [:script {:type "text/javascript"
-            :src "http://b.st-hatena.com/js/bookmark_button.js"
-            :charset "utf-8"
-            :async "async"}])
+
 ;;; disqus comment and thread
 (defn disqus-comment
   [site]
@@ -78,13 +44,23 @@
  [:div {:class "post"} contents]
 
  ;; social buttons (TODO: css を調整して綺麗に並べる)
- [:div {:class "social-buttons"}
-  (tweet-button :lang "ja" :label "ツイート")
-  (facebook-like-button site)
-  (tumblr-like-button site)
-  (hatena-bookmark-button site)]
+ [:div {:class "social-buttons"
+        :style "float:right;overflow:hidden;margin-top:0px;text-align:right;height:32px;"}
+  [:div {:style "float:left;width:51px;overflow:hidden;"}
+   (hatena-bookmark-button site)]   ;; はてぶ
+  [:div {:style "float:left;width:81px;overflow:hidden;"}
+   ;; Tumblr
+   (tumblr-share-button site)
+   ; "<a href=\"http://www.tumblr.com/share\" title=\"Share on Tumblr\" style=\"display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;\"></a>"
+   ]
+  [:div {:style "float:left;overflow:hidden;"}
+   (tweet-button :lang "ja" :label "ツイート")] ;; ツイッター
+  [:div {:style "float:left;overflow:hidden;"}
+   (facebook-like-button site)]] ;; いいね
 
  ;; disqus comment
- (disqus-comment site)
+ [:div {:style "float:left;"}
+  (disqus-comment site)
+  ]
  (js "http://embedtweet.com/javascripts/embed_v2.js")
 ]

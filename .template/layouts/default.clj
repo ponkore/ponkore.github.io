@@ -24,11 +24,63 @@
    (link (img "/img/feed/Blue (Custom).png") "/atom.xml")
    ]
   )
+
 ;;; banner
 (defn misaki-banner
   []
   (link (img "http://liquidz.github.com/img/misaki_banner.png") "https://github.com/liquidz/misaki"))
 
+;;; facebook button
+(defn facebook-like-button
+  "facebook like button"
+  [site]
+  (let [params
+        ["href" "http%3A%2F%2Fponkore.github.com%2Fi"
+         "layout" "standard"
+         "show_faces" "true"
+         "width" 300
+         "action" "like"
+         "colorscheme" "light"
+         "height" 80]
+        param-str (clojure.string/join "&" (map #(clojure.string/join "=" %) (partition 2 params)))]
+    [:iframe {:src (str "http://www.facebook.com/plugins/like.php?" param-str)
+              :scrolling "no"
+              :frameborder "0"
+              :style "border:none; overflow:hidden; height:41px;"
+              :allowTransparency "true"}]))
+
+;;; Tumblr+ ボタン
+(defn tumblr-share-button
+  "Tumblr share button"
+  [site]
+ [:a {:href "http://www.tumblr.com/share"
+      :title "Share on Tumblr"
+      :style "display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;"}
+  ""]) ;;; Share on Tumblr
+
+;;; hatena bookmark button
+(defn hatena-bookmark-button
+  [site]
+  "hatena bookmark button"
+  (list
+   [:a {:href (str "http://b.hatena.ne.jp/entry/" (:site-url site))
+        :class "hatena-bookmark-button"
+        :data-hatena-bookmark-title (site :title)
+        :data-hatena-bookmark-layout "standard"
+        :title "このエントリーをはてなブックマークに追加"}
+    [:img {:href "http://b.st-hatena.com/images/entry-button/button-only.gif"
+           :alt "このエントリーをはてなブックマークに追加"
+           :width "20"
+           :height "20"
+           :style "border: none;"}]]
+   [:script {:type "text/javascript"
+             :src "http://b.st-hatena.com/js/bookmark_button.js"
+             :charset "utf-8"
+             :async "async"}]))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Main layout starts here.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [:head
  [:meta {:charset (:charset site)}]
  [:meta {:name "viewport" :content "width=device-width"}]
