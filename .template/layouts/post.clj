@@ -59,7 +59,7 @@
    (facebook-like-button site)]] ;; いいね
 
  ;; disqus comment
- [:div {:style "float:left;"}
+ [:div {:style "float:clear;"}
   (disqus-comment site)
   ]
  (js "http://embedtweet.com/javascripts/embed_v2.js")
