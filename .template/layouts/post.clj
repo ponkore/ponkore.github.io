@@ -43,24 +43,23 @@
  ;; contents
  [:div {:class "post"} contents]
 
- ;; social buttons (TODO: css を調整して綺麗に並べる)
- [:div {:class "social-buttons"
-        :style "float:right;overflow:hidden;margin-top:0px;text-align:right;height:32px;"}
-  [:div {:style "float:left;width:51px;overflow:hidden;"}
-   (hatena-bookmark-button site)]   ;; はてぶ
-  [:div {:style "float:left;width:81px;overflow:hidden;"}
-   ;; Tumblr
-   (tumblr-share-button site)
-   ; "<a href=\"http://www.tumblr.com/share\" title=\"Share on Tumblr\" style=\"display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;\"></a>"
-   ]
-  [:div {:style "float:left;overflow:hidden;"}
-   (tweet-button :lang "ja" :label "ツイート")] ;; ツイッター
-  [:div {:style "float:left;overflow:hidden;"}
-   (facebook-like-button site)]] ;; いいね
+ ;; social buttons
+ [:div {:class "clearfix"}
+  [:div {:class "social-buttons"
+         :style "float:right;overflow:hidden;margin-top:0px;text-align:right;height:32px;"}
+   [:div {:style "float:left;width:51px;overflow:hidden;"}
+    (hatena-bookmark-button site)]   ;; はてぶ
+   [:div {:style "float:left;width:81px;overflow:hidden;"}
+    (tumblr-share-button site)] ;; Tumblr
+    ;; "<a href=\"http://www.tumblr.com/share\" title=\"Share on Tumblr\" style=\"display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;\"></a>"
+   [:div {:style "float:left;overflow:hidden;"}
+    (tweet-button :lang "ja" :label "ツイート")] ;; ツイッター
+   [:div {:style "float:left;overflow:hidden;"}
+    (facebook-like-button site)]]] ;; Facebook
 
  ;; disqus comment
- [:div {:style "float:clear;"}
-  (disqus-comment site)
-  ]
+ [:div {:class "clearfix"}
+  (disqus-comment site)]
+
  (js "http://embedtweet.com/javascripts/embed_v2.js")
 ]
