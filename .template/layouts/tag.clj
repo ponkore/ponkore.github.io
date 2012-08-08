@@ -2,5 +2,4 @@
 ; @title   tag default title
 
 [:article
- (tag-list)
- ]
+ [:h3 (tag-list)]]

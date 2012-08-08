@@ -7,62 +7,25 @@
   [:div {:class "page-header"}
    [:h1 [:span fs] rs]])
 
+(defn my-date->string
+  [date]
+  (clojure.string/join "/"
+                       [(misaki.html.conv/year date)
+                        (misaki.html.conv/month date)
+                        (misaki.html.conv/day date)]))
+
+(defn post-list2
+  "Make default all posts unordered list."
+  [site]
+  (ul
+    #(list
+       (my-date->string (:date %))
+       "&nbsp;-&nbsp;"
+       (link (str (:title %)) (:url %)))   ; lazy-content は使えない...
+    (:posts site)))
+
+;;; TODO: site に各ページのサマリ(read more より前の部分)を持つ必要あり
+;;; そうすると、記事一覧を思ったとおりに出来る。
+
 [:article
- ;; Sample posts
- (page-header "Sample posts")
- (post-list)
-
- ;; Sample post tags
- (page-header "Sample tags")
- (tag-list)
-
- ;; Template source
- (page-header "Template source")
- [:p "you can highlight your code with "
-  (link "google-code-prettify" "http://code.google.com/p/google-code-prettify/")]
-#-CLOJURE
-;; Define template options here
-; @layout  default
-; @title   misaki
-
-;; You can define your function in template
-(defn page-header [[fs & rs]]
-  [:div {:class "page-header"}
-   [:h1 [:span fs] rs]])
-
-;; Template is compiled with hiccup
-[:header
- [:h1 (link (:title site) "/")]
- [:p (link "Jekyll" "https://github.com/mojombo/jekyll")
-  " inspired static site generator in Clojure"]]
-
-;; Sample posts
-(page-header "Sample posts")
-(ul
-  #(link (:title %) (:url %))
-  (:posts site))
-
-;; Sample post tags
-(page-header "Sample tags")
-(ul
-  #(link (str (:name %) " (" (:count %) ")")
-              (:url %))
-  (:tags site))
-
-;; Template source
-(page-header "Template source")
-[:p "you can highlight your code with "
- (link "google-code-prettify" "http://code.google.com/p/google-code-prettify/")]
-#-CLJ
-CLJ
-
-;; Document
-(page-header "Document")
-[:p "See " (link "github Wiki" "https://github.com/liquidz/misaki/wiki") "."]
-CLOJURE
-
-;; Document
-(page-header "Document")
-[:p "See " (link "github Wiki" "https://github.com/liquidz/misaki/wiki") "."]
-
-]
+ (post-list2 site)]

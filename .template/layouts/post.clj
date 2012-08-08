@@ -3,17 +3,26 @@
 
 ;;; 
 (defn section
-  "write an article section with section title"
-  [section-title & contents]
+  "write an article section with title
+(section :h1 \"Chapter 1. hoge\"
+  [:p \"This is Chapter 1.\"]
+  (section :h2 \"1.1 hoge1\" \"This is Chapter 1. section 1.\" \"fuga fuga\"))
+=>
+<div class=\"section\"><section><h1>Chapter 1. hoge</h1><p>This is Chapter 1.</p>
+<div class=\"section\"><section><h2>1.1 hoge1</h2>This is Chapter 1. section 1. fuga fuga</section>
+</div></section></div>
+"
+  [key title & contents]
+;  {:pre (contains? key #{:h1 :h2 :h3 :h4 :h5 :h6})}
   [:div {:class "section"}
-   [:span {:class "section-title"} section-title]
-   [:br] ;; TODO: <br> ではなく section-title の下余白を取るべき
-   contents])
+   [:section
+    [key title]
+    contents]])
 
 ;;; disqus comment and thread
 (defn disqus-comment
-  [site]
   "disqus comment and thread"
+  [site]
   [:div
    [:div {:id "disqus_thread"}]
    [:script {:type "text/javascript"}
@@ -45,18 +54,8 @@
 
  ;; social buttons
  [:div {:class "clearfix"}
-  [:div {:class "social-buttons"
-         :style "float:right;overflow:hidden;margin-top:0px;text-align:right;height:32px;"}
-   [:div {:style "float:left;width:51px;overflow:hidden;"}
-    (hatena-bookmark-button site)]   ;; はてぶ
-   [:div {:style "float:left;width:81px;overflow:hidden;"}
-    (tumblr-share-button site)] ;; Tumblr
-    ;; "<a href=\"http://www.tumblr.com/share\" title=\"Share on Tumblr\" style=\"display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;\"></a>"
-   [:div {:style "float:left;overflow:hidden;"}
-    (tweet-button :lang "ja" :label "ツイート")] ;; ツイッター
-   [:div {:style "float:left;overflow:hidden;"}
-    (facebook-like-button site)]]] ;; Facebook
-
+  (social-buttons site)]
+ 
  ;; disqus comment
  [:div {:class "clearfix"}
   (disqus-comment site)]

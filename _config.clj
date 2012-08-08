@@ -31,7 +31,8 @@
         :disqus-shortname "ponkoresblog"
         :css ["/css/main.css"]
         :device-css ["/css/smartphone.css"]
-        :js ["/js/main.js"]}
+        ; :js ["/js/main.js"]
+        }
 
  ;; post file compile hook
  :compile-with-post ["index.html.clj" "atom.xml.clj"]

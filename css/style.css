@@ -147,13 +147,13 @@ nav a:hover{
 }
 
 #footer-container footer{
-	color:white;
 	padding:0.5em 0;
 }
 
 #footer-container img{
-	background:white;
+	background: white;
 	padding:0.5em 0.5em 0.5em 0.5em;
+/*	float:right; */
 }
 /* ===============
     ALL: IE Fixes
@@ -200,6 +200,25 @@ aside .profile-info {
 	border-left:   1px solid #000; */
 	margin-left: 5em;
 }
+
+.post {
+	border-bottom: 2px solid #000;
+	overflow: hidden;
+}
+
+.social-buttons {
+	float:right;
+	overflow:hidden;
+	margin-top:10px;
+	text-align:right;
+	height:32px;
+}
+
+.social-buttons-btn {
+	float:left;
+	margin-left:4px;
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */

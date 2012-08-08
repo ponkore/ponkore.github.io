@@ -1,13 +1,11 @@
 ; @layout  post
-; @title   Sample components
+; @title   サンプルコンポーネント
 ; @tag     tag1 tag2
 
-(section
- "はじめに"
+(section :h1 "はじめに"
  "このページは、misakiで使う記法について簡単に解説しています。"
- )
 
-(section "Link"
+(section :h2 "Link"
 #-CLJ
 (link "label" "http://localhost/")
 (link "http://localhost/")
@@ -20,14 +18,14 @@ CLJ
    (link "`code`" "http://localhost/")
 )
 
-(section "Unordered list"
+(section :h2 "Unordered list"
 #-CLJ
 (ul (range 3))
 CLJ
    (ul (range 3))
 )
 
-(section "Definition list"
+(section :h2 "Definition list"
 #-CLJ
 (dl {:a 1, :b 2})
 (dl [:hello "world" :foo "`bar`"])
@@ -36,7 +34,7 @@ CLJ
    (dl [:hello "world" :foo "`bar`"])
 )
 
-(section "Block quote"
+(section :h2 "Block quote"
 #-CLJ
 (blockquote
   "foo
@@ -49,14 +47,14 @@ CLJ
     [:a {:href "#"} "baz"])
 )
 
-(section "Inline code"
+(section :h2 "Inline code"
 #-CLJ
 (code "clojure.core/+")
 CLJ
    (code "clojure.core/+")
 )
 
-(section "Source code"
+(section :h2 "Source code"
   [:p "Comment out following code."]
 #-CLOJURE
 #-CLJ
@@ -70,7 +68,7 @@ CLOJURE
 CLJ
 )
 
-(section "Paragraph"
+(section :h2 "Paragraph"
 #-CLJ
 (p "hello, world")
 (p "paragraph with `inline` code")
@@ -79,14 +77,16 @@ CLJ
    (p "paragraph with `inline` code")
 )
 
-(section "JavaScript"
+(section :h2 "JavaScript"
 #-CLJ
 (js "a.js" "b.js")
 CLJ
 )
 
-(section "Style Sheet"
+(section :h2 "Style Sheet"
 #-CLJ
 (css "a.css" "b.css")
 CLJ
+)
+
 )
