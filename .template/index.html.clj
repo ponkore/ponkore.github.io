@@ -7,19 +7,12 @@
   [:div {:class "page-header"}
    [:h1 [:span fs] rs]])
 
-(defn my-date->string
-  [date]
-  (clojure.string/join "/"
-                       [(misaki.html.conv/year date)
-                        (misaki.html.conv/month date)
-                        (misaki.html.conv/day date)]))
-
 (defn post-list2
   "Make default all posts unordered list."
   [site]
   (ul
     #(list
-       (my-date->string (:date %))
+       (misaki.html.conv/date->string (:date %))
        "&nbsp;-&nbsp;"
        (link (str (:title %)) (:url %)))   ; lazy-content は使えない...
     (:posts site)))

@@ -2,8 +2,7 @@
 ; @title   サンプルコンポーネント
 ; @tag     tag1 tag2
 
-(section :h1 "はじめに"
- "このページは、misakiで使う記法について簡単に解説しています。"
+(p "このページは、misakiで使う記法について簡単に解説しています。")
 
 (section :h2 "Link"
 #-CLJ
@@ -87,6 +86,4 @@ CLJ
 #-CLJ
 (css "a.css" "b.css")
 CLJ
-)
-
 )

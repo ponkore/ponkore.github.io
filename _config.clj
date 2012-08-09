@@ -23,15 +23,21 @@
 
  ;; default site data
  :site {:charset    "utf-8"
-        :site-title "(life :with-parenthesis)"
+        :site-title "括弧錬金術師"
         :site-meta-description "This is @ponkore's blog"
         :site-meta-author "@ponkore"
         :site-url "http://ponkore.github.com"
         :twitter    "ponkore"
         :disqus-shortname "ponkoresblog"
+        :profile-text "Programmingが好きなおっさんSE。最近特にClojureがイイ。時折マイコンでも遊んでみたり。おっさんだけど人生まだこれからだ。"
         :css ["/css/main.css"]
         :device-css ["/css/smartphone.css"]
         ; :js ["/js/main.js"]
+
+        ;; date format string for html.conv/date->string
+        ;;   default value: :simple (:simple means "dd MMM yyyy" (ex. "01 Jan 2012"))
+        ;; :date-format :simple
+        :date-format "yyyy/MM/dd"
         }
 
  ;; post file compile hook
@@ -58,5 +64,11 @@
  ;       :pretty-print  true}
 
  ;; highlight setting
- :code-highlight {:CLJ "lang-clj", :CLOJURE "lang-clj"}
+ :code-highlight {:CLJ "lang-clj",
+                  :CLOJURE "lang-clj",
+                  :LISP "lang-lisp",
+                  :SCALA "lang-scala",
+                  :SQL "lang-sql",
+                  :VB "lang-vb",
+                  :CSS "lang-css"}
  }

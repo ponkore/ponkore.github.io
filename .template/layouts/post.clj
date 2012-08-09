@@ -43,7 +43,7 @@
  [:page-header
   [:div {:class "page-header"}
    ;; title
-   [:h1 (site :title)]
+   [:h1 (link (:title site) "")]
    ;; post date
    (post-date)
    ;; post tag

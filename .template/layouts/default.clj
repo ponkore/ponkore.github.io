@@ -9,40 +9,38 @@
    (img "/img/my-icon-64x64.png")
    [:div {:class "profile-info"}
     (link (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)))
-    (p "Programmingが好きなおっさんSE。最近特にClojureがイイ。時折マイコンでも遊んでみたり。おっさんだけど人生まだこれからだ。")
+    (p (:profile-text site))
     ] ;; <!-- profile-info -->
    [:h3 "Links"]
    [:ul
     [:li (link "Tumblr" "http://tech-pon.tumblr.com")]
-    [:li (link "Twitter" "http://twitter.com/ponkore")]
-    ]
+    [:li (link "Twitter" (str "http://twitter.com/" (:twitter site)))]]
    [:h3 "Tags"]
    (tag-list)
    [:h3 "Recent Posts"]
    (post-list)
    [:h3 "Feed"]
-   (link (img "/img/feed/Blue (Custom).png") "/atom.xml")
-   ]
-  )
+   (link (img "/img/feed/Blue (Custom).png") "/atom.xml")])
 
 ;;; banner
 (defn misaki-banner
+  "link to misaki official(?) banner."
   []
-  (link (img "http://liquidz.github.com/img/misaki_banner.png") "https://github.com/liquidz/misaki"))
+  (link (img "http://liquidz.github.com/img/misaki_banner.png") "https://github.com/liquidz/misaki" {:target "_blank"}))
 
 ;;; facebook button
 (defn facebook-like-button
   "facebook like button"
   [site]
-  (let [params
-        ["href" "http%3A%2F%2Fponkore.github.com%2Fi"
-         "layout" "standard"
-         "show_faces" "true"
-         "width" 300
-         "action" "like"
-         "colorscheme" "light"
-         "height" 80]
-        param-str (clojure.string/join "&" (map #(clojure.string/join "=" %) (partition 2 params)))]
+  (let [params ;; TODO: ぐだぐだなので、なんとかしなくちゃ
+        {"href" "http%3A%2F%2Fponkore.github.com%2Fi",
+         "layout" "standard",
+         "show_faces" "true",
+         "width" 300,
+         "action" "like",
+         "colorscheme" "light",
+         "height" 80}
+        param-str (clojure.string/join "&" (map (fn [[k v]] (str k "=" v)) params))]
     [:iframe {:src (str "http://www.facebook.com/plugins/like.php?" param-str)
               :scrolling "no"
               :frameborder "0"
