@@ -43,11 +43,11 @@
  [:page-header
   [:div {:class "page-header"}
    ;; title
-   [:h1 (link (:title site) "")]
-   ;; post date
-   (post-date)
-   ;; post tag
-   (post-tags)]]
+   [:h1 (link (:title site) "#")]
+   ;; post date and tags
+   [:div {:class "tag-and-date"}
+    (post-date)
+    (post-tags)]]]
 
  ;; contents
  [:div {:class "post"} contents]

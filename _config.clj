@@ -24,6 +24,7 @@
  ;; default site data
  :site {:charset    "utf-8"
         :site-title "括弧錬金術師"
+        :site-subtitle "S式を錬成してます"
         :site-meta-description "This is @ponkore's blog"
         :site-meta-author "@ponkore"
         :site-url "http://ponkore.github.com"
@@ -37,7 +38,7 @@
         ;; date format string for html.conv/date->string
         ;;   default value: :simple (:simple means "dd MMM yyyy" (ex. "01 Jan 2012"))
         ;; :date-format :simple
-        :date-format "yyyy/MM/dd"
+        :date-format "yyyy-MM-dd"
         }
 
  ;; post file compile hook
@@ -64,11 +65,15 @@
  ;       :pretty-print  true}
 
  ;; highlight setting
- :code-highlight {:CLJ "lang-clj",
-                  :CLOJURE "lang-clj",
-                  :LISP "lang-lisp",
-                  :SCALA "lang-scala",
-                  :SQL "lang-sql",
-                  :VB "lang-vb",
-                  :CSS "lang-css"}
+ :code-highlight {:CLJ     "lang-clj"
+                  :CLOJURE "lang-clj"
+                  :LISP    "lang-lisp"
+                  :SCALA   "lang-scala"
+                  :SQL     "lang-sql"
+                  :VB      "lang-vb"
+                  :CSS     "lang-css"
+                  :JAVA    "lang-java"
+                  :HTML    "lang-html"
+                  :RUBY    "lang-ruby"
+                  :SH      "lang-sh"}
  }

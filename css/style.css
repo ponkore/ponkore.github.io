@@ -143,7 +143,7 @@ nav a:hover{
 
 #main aside{
 	color:white;
-	padding:0px 2% 10px;
+	padding:0px 2% 10px;  /* @@@ original: 5% */
 }
 
 #footer-container footer{
@@ -153,7 +153,6 @@ nav a:hover{
 #footer-container img{
 	background: white;
 	padding:0.5em 0.5em 0.5em 0.5em;
-/*	float:right; */
 }
 /* ===============
     ALL: IE Fixes
@@ -167,16 +166,16 @@ nav a:hover{
    ========================================================================== */
 /* post page header */
 .page-header{
-     margin: 1em 0 1.5em 0;
+     margin: 0 0 0 0;
 	 border-bottom: 2px solid #000;
 	 overflow: hidden;
 }
-.page-header h1 { font-weight: normal; font-size: 2em; float: left; margin: 0.5em 0 0 0; }
-.page-header p { float: right; margin: 2em 0 0 2em; }
-.page-header .post-date { float: right; }
-.page-header .tag ul { float: right; list-style: none; }
-.page-header .tag li { float: left; margin: 0.5em 0 0 0; }
+.page-header h1 { font-weight: normal; float: left; margin: 0.2em 0 0 0; line-height: 100%; }
+.page-header .date { float: right; margin: 0 0 0 0; }
+.page-header .tag ul { float: left; list-style: none; margin: 0 0 0 0; }
+.page-header .tag li { float: left; margin-left: 0.5em; }
 
+/* post section */
 .section-title       { font-size: 1.6em; margin: 0 0 1em 0; border-bottom: 2px solid #aaa; }
 .section             { margin: 0 0 1em 0; }
 
@@ -209,9 +208,9 @@ aside .profile-info {
 .social-buttons {
 	float:right;
 	overflow:hidden;
-	margin-top:10px;
+	margin-top:0.5em;
 	text-align:right;
-	height:32px;
+	height:6em;
 }
 
 .social-buttons-btn {

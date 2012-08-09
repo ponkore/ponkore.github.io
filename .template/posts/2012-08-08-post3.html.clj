@@ -1,8 +1,9 @@
 ; @layout  post
-; @title   個人的な misaki TODO
-; @tag     tag3
+; @title   個人的な misaki TODO ああああああああああああああ
+; @tag     tag1 tag3
+; @summary 個人的なTODO をとりあえずメモっときます。
 
-"個人的なTODO をとりあえずメモっとく"
+(p (:summary (meta contents)))
 
 (section
  :h2 "read more ... (続きを読む) 記法の導入"
@@ -23,7 +24,7 @@ post ページに飛ぶ、という感じ。Index ページに表示される「
  :h2 "misaki.html.conv/date->string で好みのフォーマットを指定"
  (p "config.clj に好みの日付フォーマットを指定できるようにしたい。")
  (p "
-一旦、下記のようなコードで対処。_config.clj には、`:date-format \"yyyy/MM/dd\"`
+一旦、下記のようなコードで対処。_config.clj には、`:date-format \"yyyy-MM-dd\"`
 のように記述しておく。デフォルト`:date-format`のデフォルト値は`:simple`。
 ")
 #-CLJ
@@ -44,6 +45,18 @@ post ページに飛ぶ、という感じ。Index ページに表示される「
              (t/month date))
         (.toString date "yyyy")])
       (.toString date (:date-format *site*)))))
+CLJ
+(p "
+_config.clj には :site に設定した。がこれは美しくない(と思
+う)。_config.clj の toplevel(?) に本当は設定すべきだと思うのだが、うま
+くいかなかった...。
+")
+#-CLJ
+ :site {
+        ;; :
+        ;; :
+        :date-format "yyyy-MM-dd"
+        }
 CLJ
 )
 

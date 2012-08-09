@@ -1,10 +1,9 @@
 ; @layout  post
 ; @title   いろんな言語でのサンプル(google code prettify のテスト)
 ; @tag     tag1
-; @summary このページは、あいうえお。
+; @summary misakiで google code prettify するパターンを書いてみます。
 
-(p "このページは、misakiで google code prettify するパターンを書いてみます。")
-(p "summary:[" (:summary (meta contents)) "]")
+(p (:summary (meta contents)))
   
 (section :h2 "clojure"
 #-CLJ
@@ -119,4 +118,71 @@ Private Sub Foo
    MsgBox "Hello, world"
 End Sub
 VB
+)
+
+(section :h2 "java"
+#-JAVA
+// JAVA
+public class Foo extends Hoge {
+    // 適当な定数
+    private static final int BOO = 0;
+    // メインだけ書いてみる
+    public static void main(String[] args) {
+        System.out.println("Hello, misaki!");
+    }
+}
+JAVA
+)
+
+(section :h2 "html"
+#-HTML
+<!-- HTML -->
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<pre>
+  hoge fuga
+</pre>
+Hello, <B><I>misaki!</I></B><br>
+HTML
+)
+
+(section :h2 "css"
+#-CSS
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+CSS
+)
+
+(section :h2 "shell"
+#-SH
+
+bash$ cat ./hello.sh
+#!/bin/sh
+echo "hello, misaki."
+bash$ chmod +x ./hello.sh
+bash$ ./hello.sh
+hello, misaki.
+bash$
+SH
+)
+
+(section :h2 "ruby"
+#-RUBY
+
+module Nendo
+
+
+RUBY
 )

@@ -14,7 +14,9 @@
     #(list
        (misaki.html.conv/date->string (:date %))
        "&nbsp;-&nbsp;"
-       (link (str (:title %)) (:url %)))   ; lazy-content は使えない...
+       (link (str (:title %)) (:url %))
+       "&nbsp;-&nbsp;"
+       (:summary %))
     (:posts site)))
 
 ;;; TODO: site に各ページのサマリ(read more より前の部分)を持つ必要あり

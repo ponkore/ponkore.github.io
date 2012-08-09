@@ -8,13 +8,13 @@
    [:h3 "Profile"]
    (img "/img/my-icon-64x64.png")
    [:div {:class "profile-info"}
-    (link (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)))
+    (link (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)) {:target "_blank"})
     (p (:profile-text site))
     ] ;; <!-- profile-info -->
    [:h3 "Links"]
    [:ul
-    [:li (link "Tumblr" "http://tech-pon.tumblr.com")]
-    [:li (link "Twitter" (str "http://twitter.com/" (:twitter site)))]]
+    [:li (link "Tumblr" "http://tech-pon.tumblr.com" {:target "_blank"})]
+    [:li (link "Twitter" (str "http://twitter.com/" (:twitter site)) {:target "_blank"})]]
    [:h3 "Tags"]
    (tag-list)
    [:h3 "Recent Posts"]
@@ -125,7 +125,7 @@
  ;; header
  [:div {:id "header-container"}
   [:header {:class "wrapper clearfix"}
-   (link [:h1 {:id "title"} (:site-title site)] "/")
+   (link [:h1 {:id "title"} (:site-title site)] "/") [:h3 {:style "float:left; margin-top:1.7em; margin-left:1em; color:white;"} (:site-subtitle site) ]
    ]]
 
  ;; main container
