@@ -1,5 +1,6 @@
-; @layout  post
-; @title   tag default title
+;; 
+; @layout  default
+; @title   tag
 
 [:article
- [:h3 (tag-list)]]
+ (my-post-list site)]

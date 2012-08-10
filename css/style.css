@@ -164,13 +164,15 @@ nav a:hover{
 /* ===== Primary Styles ========================================================
    Author: @ponkore
    ========================================================================== */
+#subtitle { float:left; margin-top:1.7em; margin-left:1em; color:white; }
+
 /* post page header */
-.page-header{
+.page-header {
      margin: 0 0 0 0;
 	 border-bottom: 2px solid #000;
 	 overflow: hidden;
 }
-.page-header h1 { font-weight: normal; float: left; margin: 0.2em 0 0 0; line-height: 100%; }
+.page-header h1 { color:red; font-weight: normal; margin: 0.2em 0 0 0; line-height: 100%; }
 .page-header .date { float: right; margin: 0 0 0 0; }
 .page-header .tag ul { float: left; list-style: none; margin: 0 0 0 0; }
 .page-header .tag li { float: left; margin-left: 0.5em; }

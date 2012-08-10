@@ -24,7 +24,7 @@
  ;; default site data
  :site {:charset    "utf-8"
         :site-title "括弧錬金術師"
-        :site-subtitle "S式を錬成してます"
+        :site-subtitle "S式しか錬成できませんが何か？"
         :site-meta-description "This is @ponkore's blog"
         :site-meta-author "@ponkore"
         :site-url "http://ponkore.github.com"
@@ -33,8 +33,14 @@
         :profile-text "Programmingが好きなおっさんSE。最近特にClojureがイイ。時折マイコンでも遊んでみたり。おっさんだけど人生まだこれからだ。"
         :css ["/css/main.css"]
         :device-css ["/css/smartphone.css"]
-        ; :js ["/js/main.js"]
-
+        :js [ ; "/js/main.js"
+             "js/lang-clj.js"
+             "js/lang-css.js"
+             "js/lang-lisp.js"
+             "js/lang-scala.js"
+             "js/lang-sql.js"
+             "js/lang-vb.js"
+             ]
         ;; date format string for html.conv/date->string
         ;;   default value: :simple (:simple means "dd MMM yyyy" (ex. "01 Jan 2012"))
         ;; :date-format :simple

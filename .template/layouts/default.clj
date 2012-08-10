@@ -1,6 +1,37 @@
 ; @title   Ponkore's Blog
 ; @format  html5
 
+;;; banner
+(defn misaki-banner
+  "link to misaki official(?) banner."
+  []
+  (link (img "http://liquidz.github.com/img/misaki_banner.png") "https://github.com/liquidz/misaki" {:target "_blank"}))
+
+(defn my-date->string
+  "Convert org.joda.time.DateTime to String"
+  [date]
+  (if date (.toString date "yyyy-MM-dd")))
+  
+;;; my-post-list
+;; とりあえず、各 post のヘッダに @summary を記述する方向にした。
+;; これなら misaki 本体を改造しなくてすむ。
+;; TODO: 記事数が増えてきた場合、next、prev リンクが必要になる。
+(defn my-post-list
+  "Make default all posts unordered list."
+  [site & options]
+  (let [list-fn
+        (if options
+          #(list
+            (my-date->string (:date %))
+            "&nbsp;-&nbsp;"
+            (link (:title %) (:url %))
+            "&nbsp;-&nbsp;"
+            (:summary %))
+          #(list
+            (str (my-date->string (:date %)) "&nbsp;-&nbsp;")
+            (link (:title %) (:url %))))]
+    (ul list-fn (:posts site))))
+
 ;;; sidebar
 (defn _aside
   [site]
@@ -9,24 +40,21 @@
    (img "/img/my-icon-64x64.png")
    [:div {:class "profile-info"}
     (link (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)) {:target "_blank"})
-    (p (:profile-text site))
-    ] ;; <!-- profile-info -->
+    (p (:profile-text site))]
+
    [:h3 "Links"]
-   [:ul
-    [:li (link "Tumblr" "http://tech-pon.tumblr.com" {:target "_blank"})]
-    [:li (link "Twitter" (str "http://twitter.com/" (:twitter site)) {:target "_blank"})]]
+   (ul
+    [(link "Tumblr" "http://tech-pon.tumblr.com" {:target "_blank"})
+     (link "Twitter" (str "http://twitter.com/" (:twitter site)) {:target "_blank"})])
+
    [:h3 "Tags"]
    (tag-list)
+
    [:h3 "Recent Posts"]
-   (post-list)
+   (my-post-list site)
+
    [:h3 "Feed"]
    (link (img "/img/feed/Blue (Custom).png") "/atom.xml")])
-
-;;; banner
-(defn misaki-banner
-  "link to misaki official(?) banner."
-  []
-  (link (img "http://liquidz.github.com/img/misaki_banner.png") "https://github.com/liquidz/misaki" {:target "_blank"}))
 
 ;;; facebook button
 (defn facebook-like-button
@@ -92,6 +120,35 @@
    ])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; disqus comment
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; disqus comment and thread
+(defn disqus-comment
+  "disqus comment and thread"
+  [site]
+  [:div
+   [:div {:id "disqus_thread"}]
+   [:script {:type "text/javascript"}
+   "(function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + '" (:disqus-shortname site)"' + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();"]
+   [:noscript
+    "Please enable JavaScript to view the "
+    (link "comments powered by Disqus." "http://disqus.com/?ref_noscript")]
+   [:a {:href "http://disqus.com" :class "dsq-brlink"}
+    "comments powered by " [:span {:class "logo-disqus"} "Disqus"]]])
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Embed hogehoge
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn gist [gistno & filename]
+  (if (empty? filename)
+    [:script {:src (str "https://gist.github.com/" gistno ".js") }]
+    [:script {:src (str "https://gist.github.com/" gistno ".js?file=" filename) }]))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Main layout starts here.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [:head
@@ -125,25 +182,20 @@
  ;; header
  [:div {:id "header-container"}
   [:header {:class "wrapper clearfix"}
-   (link [:h1 {:id "title"} (:site-title site)] "/") [:h3 {:style "float:left; margin-top:1.7em; margin-left:1em; color:white;"} (:site-subtitle site) ]
-   ]]
+   (link [:h1 {:id "title"} (:site-title site)] "/") [:h3 {:id "subtitle"} (:site-subtitle site) ]]]
 
  ;; main container
  [:div {:id "main-container"}
   [:div {:id "main" :class "wrapper clearfix"}
-   ;; main contents
-   contents
-   ;; sidebar (right side bar)
-   (_aside site)
-   ] ;; <!-- #main -->
-  ] ;; <!-- #main-container -->
+   contents      ;; main contents
+   (_aside site) ;; sidebar (right side bar)
+   ]]
 
  [:div {:id "footer-container"}
   [:footer {:class "wrapper clearfix"}
-   [:div {:style "float:right;" }(misaki-banner)]]]
+   [:div {:style "float:right;" } (misaki-banner)]]]
 
  (absolute-js ["/js/prettify.js"
-               "/js/lang-clj.js"
                "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
                "/js/script.js"
                (:js site ())])
