@@ -113,46 +113,32 @@ echo &amp;quot;hello, misaki.&amp;quot;
 bash$ chmod +x ./hello.sh
 bash$ ./hello.sh
 hello, misaki.
-bash$&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;ruby&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-ruby&quot;&gt;module Nendo&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>個人的な misaki TODO ああああああああああああああ</title><link>http://localhost:8080/2012-08/post3.html</link><updated>2012-08-08T00:00:00</updated><id>http://localhost:8080/2012-08/post3.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;個人的なTODO をとりあえずメモっときます。&lt;/p&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;read more ... (続きを読む) 記法の導入&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
-具体的にどのような結果が望みなのか、自分でもわからない。Index ページ上
-には (続きを読む...) というリンクがあり、それをクリックすると該当する
-post ページに飛ぶ、という感じ。Index ページに表示される「あるべき姿」が
-わからん。ので、とりあえずプレーンテキスト限定として、post のメタデータ
-として@summary みたいに書いておいて、Index ページではそれを引っ張ってく
-るような感じで運用しようかな。
-&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;footnote 記法の導入&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;これはテンプレート内オレオレ関数でできるかも。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;misaki.html.conv/date-&gt;string で好みのフォーマットを指定&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;config.clj に好みの日付フォーマットを指定できるようにしたい。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;
-一旦、下記のようなコードで対処。_config.clj には、&lt;code class=&quot;prettyprint&quot;&gt;:date-format &quot;yyyy-MM-dd&quot;&lt;/code&gt;
-のように記述しておく。デフォルト&lt;code class=&quot;prettyprint&quot;&gt;:date-format&lt;/code&gt;のデフォルト値は&lt;code class=&quot;prettyprint&quot;&gt;:simple&lt;/code&gt;。
-&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;; =date-&amp;gt;string
-(defn date-&amp;gt;string
-  &amp;quot;Convert org.joda.time.DateTime to String
-
-      (date-&amp;gt;string (clj-time.core/now))
-      ;=&amp;gt; \&amp;quot;01 Jan 2012\&amp;quot;&amp;quot;
-  [date]
-  (if date
-    (if (= (:date-format *site*) :simple)
-      (str/join
-       &amp;quot; &amp;quot;
-       [(.toString date &amp;quot;dd&amp;quot;)
-        ; Joda: &amp;quot;MMM&amp;quot; is not worked in my environment
-        (nth '(_ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)
-             (t/month date))
-        (.toString date &amp;quot;yyyy&amp;quot;)])
-      (.toString date (:date-format *site*)))))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;
-_config.clj には :site に設定した。がこれは美しくない(と思
-う)。_config.clj の toplevel(?) に本当は設定すべきだと思うのだが、うま
-くいかなかった...。
-&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;:site {
-        ;; :
-        ;; :
-        :date-format &amp;quot;yyyy-MM-dd&amp;quot;
-        }&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Archive (年月別の一覧取得)&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;サイドバーに年月別のリンクを設けることができるようにしたい。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;１ページ内の最大記事数指定と next/prev リンクの設定&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
+bash$&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;ruby&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-ruby&quot;&gt;module Nendo&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>個人的な misaki TODO</title><link>http://localhost:8080/2012-08/post3.html</link><updated>2012-08-08T00:00:00</updated><id>http://localhost:8080/2012-08/post3.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;個人的なTODO をとりあえずメモっときます。&lt;/p&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;read more ... (続きを読む) 記法の導入&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
+そもそもは、Index ページに post のタイトルと日付しか並ばない、というの
+が寂しく思えた、というのが発端です。Index ページに各 post の先頭いくら
+かを表示、というのが簡単そうで難しい。ブログエンジンによっては、read
+more ... を記述するための記法があったりするのですが、結構めんどくさそ
+う。なので、さしあったっては、各 post の内容を簡単にあらわす情報を、
+post のメタデータとして(つまり post の先頭のコメント欄に @summary とし
+て) 記載し、その内容を Index ページから見る、という方式でとりあえず運
+用してみよう。
+&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;footnote 記法の導入&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
+これはテンプレート内オレオレ関数でできるかも。&lt;code class=&quot;prettyprint&quot;&gt;(defn footnote [s]...)&lt;/code&gt; 
+みたいな関数を定義し、グローバルな変数 &lt;strong&gt;footnotes&lt;/strong&gt; とかに順次突っ込
+んでいき、section の終わりの部分で &lt;strong&gt;footnotes&lt;/strong&gt; の内容をレンダリング
+する、という感じでよいかと。こんどやってみよう。
+&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;misaki.html.conv/date-&gt;string で好みのフォーマットを指定&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;config.clj に好みの日付フォーマットを指定できるようにしたい。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;→とりあえず保留。というか date-&gt;string している箇所が少なく、そこ
+だけオレオレ関数で置き換えるだけにした。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Archive (年月別の一覧取得)&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;サイドバーに年月別のリンクを設けることができるようにしたい。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;１ページ内の最大記事数指定と next/prev リンクの設定&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
 read more が実現できた段階で、１Index ページ内の記事数を指定できるよう
-にし、next/prev リンクを設けたい。
-&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>Embed するものの例</title><link>http://localhost:8080/2012-08/post2.html</link><updated>2012-08-07T00:00:00</updated><id>http://localhost:8080/2012-08/post2.html</id><content type="html">&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Embed gist&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;まずは Gist から。&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(gist 3234115)&lt;/pre&gt;&lt;script src=&quot;https://gist.github.com/3234115.js&quot;&gt;&lt;/script&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(gist 3234115 &amp;quot;hoge.clj&amp;quot;)&lt;/pre&gt;&lt;script src=&quot;https://gist.github.com/3234115.js?file=(&amp;quot;hoge.clj&amp;quot;)&quot;&gt;&lt;/script&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Embed youtube, slideshare, etc&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;Youtube, Slideshare 等のように、&lt;code class=&quot;prettyprint&quot;&gt;embed&lt;/code&gt; スクリプトのあるやつについて。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;こういうやつは、embed コードのダブルクオート '&quot;' を、バックスラッシュ '\' でエスケープして、素直に貼っつけてしまいましょう。&lt;/p&gt;&lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/13782976&quot; width=&quot;427&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;http://www.slideshare.net/masa0kato/clojure-programmingchapter2-13782976&quot; title=&quot;Clojure programming-chapter-2&quot; target=&quot;_blank&quot;&gt;Clojure programming-chapter-2&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;http://www.slideshare.net/masa0kato&quot; target=&quot;_blank&quot;&gt;Masao Kato&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>サンプルコンポーネント</title><link>http://localhost:8080/2012-06/post1.html</link><updated>2012-06-09T00:00:00</updated><id>http://localhost:8080/2012-06/post1.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;このページは、misakiで使う記法について簡単に解説しています。&lt;/p&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Link&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(link &amp;quot;label&amp;quot; &amp;quot;http://localhost/&amp;quot;)
+にし、next/prev リンクを設けたい。というか、それ以前に記事をちゃんと書
+け、ということだな。
+&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;css関連の修正&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;ページヘッダのサブタイトルがおかしい。post 内 h1,h2,h3,... をそれ
+なりに装飾して節の区切りを見やすくしたい。単なる css勉強不足 orz。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;iPhone で表示したときいろいろとイタい&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;とくに pre ブロックについては、デバイス幅から完全にはみ出している。
+しかも横スクロールしたいのに折り返しになっている。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;amazon の商品画像埋め込みとか、youtube、slideshare、nicovideo 埋
+め込みとか&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;埋め込みコードが必要なのはわかるのだが、いちいち hiccup 的な感じ
+に変換するのは論外なので、なにかいい方法はないものか、考え中。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>Embed するものの例</title><link>http://localhost:8080/2012-08/post2.html</link><updated>2012-08-07T00:00:00</updated><id>http://localhost:8080/2012-08/post2.html</id><content type="html">&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Embed gist&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;まずは Gist から。&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(gist 3234115)&lt;/pre&gt;&lt;script src=&quot;https://gist.github.com/3234115.js&quot;&gt;&lt;/script&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(gist 3234115 &amp;quot;hoge.clj&amp;quot;)&lt;/pre&gt;&lt;script src=&quot;https://gist.github.com/3234115.js?file=(&amp;quot;hoge.clj&amp;quot;)&quot;&gt;&lt;/script&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Embed youtube, slideshare, etc&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;Youtube, Slideshare 等のように、&lt;code class=&quot;prettyprint&quot;&gt;embed&lt;/code&gt; スクリプトのあるやつについて。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;こういうやつは、embed コードのダブルクオート '&quot;' を、バックスラッシュ '\' でエスケープして、素直に貼っつけてしまいましょう。&lt;/p&gt;&lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/13782976&quot; width=&quot;427&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;http://www.slideshare.net/masa0kato/clojure-programmingchapter2-13782976&quot; title=&quot;Clojure programming-chapter-2&quot; target=&quot;_blank&quot;&gt;Clojure programming-chapter-2&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;http://www.slideshare.net/masa0kato&quot; target=&quot;_blank&quot;&gt;Masao Kato&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>サンプルコンポーネント</title><link>http://localhost:8080/2012-06/post1.html</link><updated>2012-06-09T00:00:00</updated><id>http://localhost:8080/2012-06/post1.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;misakiで使う記法について簡単に解説しています。&lt;/p&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Link&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(link &amp;quot;label&amp;quot; &amp;quot;http://localhost/&amp;quot;)
 (link &amp;quot;http://localhost/&amp;quot;)
-(link &amp;quot;`code`&amp;quot; &amp;quot;http://localhost/&amp;quot;)&lt;/pre&gt;&lt;a href=&quot;http://localhost/&quot;&gt;label&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://localhost/&quot;&gt;http://localhost/&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://localhost/&quot;&gt;&lt;code class=&quot;prettyprint&quot;&gt;code&lt;/code&gt;&lt;/a&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Unordered list&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(ul (range 3))&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;0&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;2&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Definition list&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(dl {:a 1, :b 2})
+(link &amp;quot;`code`&amp;quot; &amp;quot;http://localhost/&amp;quot; {:target &amp;quot;_blank&amp;quot;})&lt;/pre&gt;&lt;a href=&quot;http://localhost/&quot;&gt;label&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://localhost/&quot;&gt;http://localhost/&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://localhost/&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;prettyprint&quot;&gt;code&lt;/code&gt;&lt;/a&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Unordered list&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(ul (range 3))&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;0&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;2&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Definition list&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(dl {:a 1, :b 2})
 (dl [:hello &amp;quot;world&amp;quot; :foo &amp;quot;`bar`&amp;quot;])&lt;/pre&gt;&lt;dl&gt;&lt;dt&gt;a&lt;/dt&gt;&lt;dd&gt;1&lt;/dd&gt;&lt;dt&gt;b&lt;/dt&gt;&lt;dd&gt;2&lt;/dd&gt;&lt;/dl&gt;&lt;dl&gt;&lt;dt&gt;hello&lt;/dt&gt;&lt;dd&gt;world&lt;/dd&gt;&lt;dt&gt;foo&lt;/dt&gt;&lt;dd&gt;&lt;code class=&quot;prettyprint&quot;&gt;bar&lt;/code&gt;&lt;/dd&gt;&lt;/dl&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Block quote&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(blockquote
   &amp;quot;foo
   bar&amp;quot;

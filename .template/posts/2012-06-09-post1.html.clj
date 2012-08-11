@@ -1,20 +1,21 @@
 ; @layout  post
 ; @title   サンプルコンポーネント
 ; @tag     tag1 tag2
+; @summary misakiで使う記法について簡単に解説しています。
 
-(p "このページは、misakiで使う記法について簡単に解説しています。")
+(p (:summary (meta contents)))
 
 (section :h2 "Link"
 #-CLJ
 (link "label" "http://localhost/")
 (link "http://localhost/")
-(link "`code`" "http://localhost/")
+(link "`code`" "http://localhost/" {:target "_blank"})
 CLJ
    (link "label" "http://localhost/")
    [:br]
    (link "http://localhost/")
    [:br]
-   (link "`code`" "http://localhost/")
+   (link "`code`" "http://localhost/" {:target "_blank"})
 )
 
 (section :h2 "Unordered list"
