@@ -30,7 +30,7 @@ mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 /*+ override @ponkore */
-pre, code, kbd, samp { color: #fff; padding: 0.2em; }
+pre, code, kbd, samp { color: #fff; padding: 0.2em; overflow-x:auto; }
 article { line-height: 1.4em; }
 /*- override */
 q { quotes: none; }
@@ -134,7 +134,7 @@ nav a:hover{
    ============== */
 
 #main{
-	padding:30px 0;
+	padding:2em 0;         /* @@@ original: 30px */
 }
 
 #main article h1{
@@ -164,7 +164,11 @@ nav a:hover{
 /* ===== Primary Styles ========================================================
    Author: @ponkore
    ========================================================================== */
-#subtitle { float:left; margin-top:1.7em; margin-left:1em; color:white; }
+
+#header-container{ vertical-align:baseline; }
+
+#title { float:left; margin-top:0.4em; margin-bottom:0.4em; color:white; }
+#subtitle { float:left; margin-top:0; margin-bottom:0; margin-left:1em; color:white; }
 
 /* post page header */
 .page-header {

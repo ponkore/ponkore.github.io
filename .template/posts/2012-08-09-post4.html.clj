@@ -104,7 +104,7 @@ SCALA
 select
   user_name, count(*)
 from user_tables
-where user_name like 'ORA%'
+where user_name like 'SCOT%'
 group by user_name
 having count(*) > 1
 order by 1
