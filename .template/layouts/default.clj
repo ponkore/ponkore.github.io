@@ -5,7 +5,7 @@
 (defn misaki-banner
   "link to misaki official(?) banner."
   []
-  (link (img "http://liquidz.github.com/img/misaki_banner.png") "https://github.com/liquidz/misaki" {:target "_blank"}))
+  (link {:target "_blank"} (img "http://liquidz.github.com/img/misaki_banner.png") "https://github.com/liquidz/misaki"))
 
 (defn my-date->string
   "Convert org.joda.time.DateTime to String"
@@ -39,13 +39,13 @@
    [:h3 "Profile"]
    (img "/img/my-icon-64x64.png")
    [:div {:class "profile-info"}
-    (link (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)) {:target "_blank"})
+    (link {:target "_blank"} (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)))
     (p (:profile-text site))]
 
    [:h3 "Links"]
    (ul
-    [(link "Tumblr" "http://tech-pon.tumblr.com" {:target "_blank"})
-     (link "Twitter" (str "http://twitter.com/" (:twitter site)) {:target "_blank"})])
+    [(link {:target "_blank"} "Tumblr" "http://tech-pon.tumblr.com")
+     (link {:target "_blank"} "Twitter" (str "http://twitter.com/" (:twitter site)))])
 
    [:h3 "Tags"]
    (tag-list)

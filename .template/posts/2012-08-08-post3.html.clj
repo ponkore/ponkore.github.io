@@ -62,3 +62,12 @@ read more が実現できた段階で、１Index ページ内の記事数を指�
 め込みとか"
  (p "埋め込みコードが必要なのはわかるのだが、いちいち hiccup 的な感じ
 に変換するのは論外なので、なにかいい方法はないものか、考え中。"))
+
+(section
+ :h2 "lisp にありがちな＊variable-name＊ (＊は半角) の表現"
+ (p "インラインで *variable-name* と書くと、<em>variable-name</em>
+に展開されてしまう。html/core.clj の parse-string の parse-emphasized
+が反応してしまう、ということで、markdown の書式に従っているといえば
+その通りなのだが、blog 上で表現する方法がないものか。")
+ (p "例えばインラインコード `*variable-name*` と書けばよい、とする等。
+  "))

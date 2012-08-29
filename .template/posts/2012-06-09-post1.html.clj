@@ -9,13 +9,13 @@
 #-CLJ
 (link "label" "http://localhost/")
 (link "http://localhost/")
-(link "`code`" "http://localhost/" {:target "_blank"})
+(link {:target "_blank"} "`code`" "http://localhost/")
 CLJ
    (link "label" "http://localhost/")
    [:br]
    (link "http://localhost/")
    [:br]
-   (link "`code`" "http://localhost/" {:target "_blank"})
+   (link {:target "_blank"} "`code`" "http://localhost/")
 )
 
 (section :h2 "Unordered list"

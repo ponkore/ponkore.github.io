@@ -24,7 +24,8 @@
  [:page-header
   [:div {:class "page-header"}
    ;; title
-   [:h1 (link (:title site) "#" {:style "text-decoration:none;color:black;"})]
+   [:h1 (link (:title site) "#" ; {:style "text-decoration:none;color:black;"}
+              )]
    ;; post date and tags
    [:div {:class "tag-and-date"}
     [:p {:class "date"} (-> site :date my-date->string)] ; (post-date)
