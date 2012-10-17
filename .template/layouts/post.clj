@@ -1,7 +1,7 @@
 ; @layout  default
 ; @title   post default title
 
-;;; 
+;;;
 (defn section
   "write an article section with title
 (section :h1 \"Chapter 1. hoge\"

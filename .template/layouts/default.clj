@@ -11,7 +11,7 @@
   "Convert org.joda.time.DateTime to String"
   [date]
   (if date (.toString date "yyyy-MM-dd")))
-  
+
 ;;; my-post-list
 ;; とりあえず、各 post のヘッダに @summary を記述する方向にした。
 ;; これなら misaki 本体を改造しなくてすむ。

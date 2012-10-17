@@ -41,10 +41,6 @@
              "js/lang-sql.js"
              "js/lang-vb.js"
              ]
-        ;; date format string for html.conv/date->string
-        ;;   default value: :simple (:simple means "dd MMM yyyy" (ex. "01 Jan 2012"))
-        ;; :date-format :simple
-        :date-format "yyyy-MM-dd"
         }
 
  ;; post file compile hook

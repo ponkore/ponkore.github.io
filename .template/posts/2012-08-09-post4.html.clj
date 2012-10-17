@@ -4,7 +4,7 @@
 ; @summary misakiで google code prettify するパターンを書いてみます。
 
 (p (:summary (meta contents)))
-  
+
 (section :h2 "clojure"
 #-CLJ
 ; CLJ
