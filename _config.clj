@@ -23,8 +23,8 @@
 
  ;; default site data
  :site {:charset    "utf-8"
-        :site-title "括弧錬金術師"
-        :site-subtitle "S式しか錬成できませんが何か？"
+        :site-title "主にProgrammingなネタ集"
+        :site-subtitle "小ネタばかりかもしれませんが..."
         :site-meta-description "This is @ponkore's blog"
         :site-meta-author "@ponkore"
         :site-url "http://ponkore.github.com"
@@ -78,4 +78,31 @@
                   :HTML    "lang-html"
                   :RUBY    "lang-ruby"
                   :SH      "lang-sh"}
+
+ ;; flag for detailed log
+ ;;   default value: false
+ :detailed-log true;false
+
+ ;; flag for error notification
+ ;;   default value: false
+ ;:notify? false
+ :notify? true
+
+ ;; notify setting(OPTIONAL)
+ :notify-setting {;; title for fixing notification
+                  ;;  default value: "{{filename}}"
+                  :fixed-title  "{{filename}}"
+                  ;; message for fixing notication
+                  ;;   default value: "FIXED"
+                  :fixed        "FIXED"
+                  ;; title for failing notification
+                  ;;   default value: "{{filename}} : {{line}}"
+                  :failed-title "{{filename}} : {{line}}"
+                  ;; message for failing notification
+                  ;;   default value: {{message}}
+                  :failed       "{{message}}"}
+
+ ;; compiler setting
+ ;;   default value: "default"
+ :compiler "default"
  }
