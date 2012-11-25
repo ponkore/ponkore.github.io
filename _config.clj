@@ -23,8 +23,8 @@
 
  ;; default site data
  :site {:charset    "utf-8"
-        :site-title "主にProgrammingなネタ集"
-        :site-subtitle "小ネタばかりかもしれませんが..."
+        :site-title "Challenge and Change!!"
+        :site-subtitle "主にProgrammingなネタ集です。"
         :site-meta-description "This is @ponkore's blog"
         :site-meta-author "@ponkore"
         :site-url "http://ponkore.github.com"
@@ -51,6 +51,8 @@
 
  ;; post setting
  ;;   default value: #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
+; :post-filename-regexp #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)\.html.clj$"
+; :post-filename-format "{{year}}-{{month}}/{{filename}}/index.html"
  :post-filename-regexp #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
  :post-filename-format "{{year}}-{{month}}/{{filename}}"
 
