@@ -1,154 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>misaki</title><link href="http://localhost:8080/atom.xml" rel="self" /><link href="http://localhost:8080" /><updated></updated><id>http://localhost:8080</id><author><name>@ponkore</name></author><entry><title>いろんな言語でのサンプル(google code prettify のテスト)</title><link>http://localhost:8080/2012-09/post5.html</link><updated>2012-09-01T00:00:00</updated><id>http://localhost:8080/2012-09/post5.html</id><content type="html">{:layout &quot;post&quot;, :date #&lt;DateTime 2012-09-01T00:00:00.000Z&gt;, :site-meta-description &quot;This is @ponkore's blog&quot;, :site-subtitle &quot;主にProgrammingなネタ集です。&quot;, :tag-name nil, :device-css [&quot;/css/smartphone.css&quot;], :prev nil, :title &quot;いろんな言語でのサンプル(google code prettify のテスト)&quot;, :site-url &quot;http://ponkore.github.com&quot;, :css [&quot;/css/main.css&quot;], :profile-text &quot;Programmingが好きなおっさんSE。最近特にClojureがイイ。時折マイコンでも遊んでみたり。おっさんだけど人生まだこれからだ。&quot;, :disqus-shortname &quot;ponkoresblog&quot;, :posts ({:layout &quot;post&quot;, :date #&lt;DateTime 2012-09-01T00:00:00.000Z&gt;, :prev nil, :title &quot;いろんな言語でのサンプル(google code prettify のテスト)&quot;, :url &quot;/2012-09/post5.html&quot;, :lazy-content #&lt;Delay@71b9574e: :pending&gt;, :summary &quot;misakiで google code prettify するパターンを書いてみます。&quot;, :file #&lt;File ponkore.github.com/.template/posts/2012-09-01-post5.html.clj&gt;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;}), :next {:lazy-content #&lt;Delay@3f12fc36: :pending&gt;, :url &quot;/2012-08/post4.html&quot;, :date #&lt;DateTime 2012-08-09T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-09-post4.html.clj&gt;, :layout &quot;post&quot;, :title &quot;いろんな言語でのサンプル(google code prettify のテスト)&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;}), :summary &quot;misakiで google code prettify するパターンを書いてみます。&quot;}} {:layout &quot;post&quot;, :date #&lt;DateTime 2012-08-09T00:00:00.000Z&gt;, :prev {:lazy-content #&lt;Delay@71b9574e: :pending&gt;, :url &quot;/2012-09/post5.html&quot;, :date #&lt;DateTime 2012-09-01T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-09-01-post5.html.clj&gt;, :layout &quot;post&quot;, :title &quot;いろんな言語でのサンプル(google code prettify のテスト)&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;}), :summary &quot;misakiで google code prettify するパターンを書いてみます。&quot;}, :title &quot;いろんな言語でのサンプル(google code prettify のテスト)&quot;, :url &quot;/2012-08/post4.html&quot;, :lazy-content #&lt;Delay@3f12fc36: :pending&gt;, :summary &quot;misakiで google code prettify するパターンを書いてみます。&quot;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-09-post4.html.clj&gt;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;}), :next {:lazy-content #&lt;Delay@776c5d93: :pending&gt;, :url &quot;/2012-08/post3.html&quot;, :date #&lt;DateTime 2012-08-08T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-08-post3.html.clj&gt;, :layout &quot;post&quot;, :title &quot;個人的な misaki TODO&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag3&quot;, :url &quot;/tag/tag3.html&quot;}), :summary &quot;個人的なTODO をとりあえずメモっときます。&quot;}} {:layout &quot;post&quot;, :date #&lt;DateTime 2012-08-08T00:00:00.000Z&gt;, :prev {:lazy-content #&lt;Delay@3f12fc36: :pending&gt;, :url &quot;/2012-08/post4.html&quot;, :date #&lt;DateTime 2012-08-09T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-09-post4.html.clj&gt;, :layout &quot;post&quot;, :title &quot;いろんな言語でのサンプル(google code prettify のテスト)&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;}), :summary &quot;misakiで google code prettify するパターンを書いてみます。&quot;}, :title &quot;個人的な misaki TODO&quot;, :url &quot;/2012-08/post3.html&quot;, :lazy-content #&lt;Delay@776c5d93: :pending&gt;, :summary &quot;個人的なTODO をとりあえずメモっときます。&quot;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-08-post3.html.clj&gt;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag3&quot;, :url &quot;/tag/tag3.html&quot;}), :next {:lazy-content #&lt;Delay@6b739b25: :pending&gt;, :url &quot;/2012-08/post2.html&quot;, :date #&lt;DateTime 2012-08-07T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-07-post2.html.clj&gt;, :layout &quot;post&quot;, :title &quot;Embed するものの例&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag2&quot;, :url &quot;/tag/tag2.html&quot;}), :summary &quot;Webページに embed するものについての例を示します。&quot;}} {:layout &quot;post&quot;, :date #&lt;DateTime 2012-08-07T00:00:00.000Z&gt;, :prev {:lazy-content #&lt;Delay@776c5d93: :pending&gt;, :url &quot;/2012-08/post3.html&quot;, :date #&lt;DateTime 2012-08-08T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-08-post3.html.clj&gt;, :layout &quot;post&quot;, :title &quot;個人的な misaki TODO&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag3&quot;, :url &quot;/tag/tag3.html&quot;}), :summary &quot;個人的なTODO をとりあえずメモっときます。&quot;}, :title &quot;Embed するものの例&quot;, :url &quot;/2012-08/post2.html&quot;, :lazy-content #&lt;Delay@6b739b25: :pending&gt;, :summary &quot;Webページに embed するものについての例を示します。&quot;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-07-post2.html.clj&gt;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag2&quot;, :url &quot;/tag/tag2.html&quot;}), :next {:lazy-content #&lt;Delay@72ced13f: :pending&gt;, :url &quot;/2012-06/post1.html&quot;, :date #&lt;DateTime 2012-06-09T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-06-09-post1.html.clj&gt;, :layout &quot;post&quot;, :title &quot;サンプルコンポーネント&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag2&quot;, :url &quot;/tag/tag2.html&quot;}), :summary &quot;misakiで使う記法について簡単に解説しています。&quot;}} {:layout &quot;post&quot;, :date #&lt;DateTime 2012-06-09T00:00:00.000Z&gt;, :prev {:lazy-content #&lt;Delay@6b739b25: :pending&gt;, :url &quot;/2012-08/post2.html&quot;, :date #&lt;DateTime 2012-08-07T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-07-post2.html.clj&gt;, :layout &quot;post&quot;, :title &quot;Embed するものの例&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag2&quot;, :url &quot;/tag/tag2.html&quot;}), :summary &quot;Webページに embed するものについての例を示します。&quot;}, :title &quot;サンプルコンポーネント&quot;, :url &quot;/2012-06/post1.html&quot;, :lazy-content #&lt;Delay@72ced13f: :pending&gt;, :summary &quot;misakiで使う記法について簡単に解説しています。&quot;, :file #&lt;File ponkore.github.com/.template/posts/2012-06-09-post1.html.clj&gt;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:name &quot;tag2&quot;, :url &quot;/tag/tag2.html&quot;}), :next nil}), :site-title &quot;Challenge and Change!!&quot;, :index &quot;/&quot;, :charset &quot;utf-8&quot;, :format &quot;html5&quot;, :site-meta-author &quot;@ponkore&quot;, :js [&quot;js/lang-clj.js&quot; &quot;js/lang-css.js&quot; &quot;js/lang-lisp.js&quot; &quot;js/lang-scala.js&quot; &quot;js/lang-sql.js&quot; &quot;js/lang-vb.js&quot;], :summary &quot;misakiで google code prettify するパターンを書いてみます。&quot;, :file #&lt;File ponkore.github.com/.template/posts/2012-09-01-post5.html.clj&gt;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;}), :twitter &quot;ponkore&quot;, :next {:lazy-content #&lt;Delay@3f12fc36: :pending&gt;, :url &quot;/2012-08/post4.html&quot;, :date #&lt;DateTime 2012-08-09T00:00:00.000Z&gt;, :file #&lt;File ponkore.github.com/.template/posts/2012-08-09-post4.html.clj&gt;, :layout &quot;post&quot;, :title &quot;いろんな言語でのサンプル(google code prettify のテスト)&quot;, :tag ({:name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;}), :summary &quot;misakiで google code prettify するパターンを書いてみます。&quot;}, :tags ({:count 5, :name &quot;tag1&quot;, :url &quot;/tag/tag1.html&quot;} {:count 2, :name &quot;tag2&quot;, :url &quot;/tag/tag2.html&quot;} {:count 1, :name &quot;tag3&quot;, :url &quot;/tag/tag3.html&quot;})}</content></entry><entry><title>いろんな言語でのサンプル(google code prettify のテスト)</title><link>http://localhost:8080/2012-08/post4.html</link><updated>2012-08-09T00:00:00</updated><id>http://localhost:8080/2012-08/post4.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;misakiで google code prettify するパターンを書いてみます。&lt;/p&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;clojure&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;; CLJ
-(defn fact[n]
-  &amp;quot;factorial&amp;quot;
-  (if (= n 0) 1
-      (* n (fact (dec n)))))&lt;/pre&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;; CLOJURE
-(defn fact[n]
-  &amp;quot;factorial&amp;quot;
-  (if (= n 0) 1
-      (* n (fact (dec n)))))&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;lisp&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-lisp&quot;&gt;; LISP
-(defun fact (n)
-  &amp;quot;factorial&amp;quot;
-  (if (= n 0) 1
-      (* n (fact (1- n)))))&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;scala&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-scala&quot;&gt;// http://d.hatena.ne.jp/xuwei/20120515/1337065445 (https://gist.github.com/2699263) でテスト
-// Inversefizzbuzz
-// http://www.jasq.org/2/post/2012/05/inverse-fizzbuzz.html
-//
-// fork from https://gist.github.com/2699068
-object InverseFizzbuzz extends App {
-
-  def zzubzzif(pattern:Seq[String]) = {
-    def fizzbuzz(n:Int) = (n%3, n%5) match{
-      case (0,0) =&amp;gt; &amp;quot;fizzbuzz&amp;quot;
-      case (0,_) =&amp;gt; &amp;quot;fizz&amp;quot;
-      case (_,0) =&amp;gt; &amp;quot;buzz&amp;quot;
-      case _ =&amp;gt; &amp;quot;&amp;quot;
-    }
-
-    val n = Stream.from(0).map(fizzbuzz).indexOfSlice(pattern)
-    (n until (pattern.size + n)) toList
-  }
-
-  def _p(s:Seq[String]) = {
-    println(&amp;quot;pattern : %s&amp;quot; format (s.map{s =&amp;gt; s.mkString(&amp;quot;'&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;'&amp;quot;)}))
-    println(zzubzzif(s))
-    println(&amp;quot;&amp;quot;)
-  }
-
-  _p(Seq(&amp;quot;fizz&amp;quot;))
-  _p(Seq(&amp;quot;buzz&amp;quot;))
-  _p(Seq(&amp;quot;fizz&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;buzz&amp;quot;))
-  _p(Seq(&amp;quot;fizz&amp;quot;,&amp;quot;buzz&amp;quot;))
-  _p(Seq(&amp;quot;buzz&amp;quot;,&amp;quot;fizz&amp;quot;))
-  _p(Seq(&amp;quot;fizz&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;buzz&amp;quot;,&amp;quot;fizz&amp;quot;))
-  _p(Seq(&amp;quot;fizz&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;fizz&amp;quot;))
-  _p(Seq(&amp;quot;fizz&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;fizz&amp;quot;,&amp;quot;buzz&amp;quot;))
-
-
-  // Result:
-  //
-  // pattern : List('fizz')
-  // List(3)
-  //
-  // pattern : List('buzz')
-  // List(5)
-  //
-  // pattern : List('fizz', '', 'buzz')
-  // List(3, 4, 5)
-  //
-  // pattern : List('fizz', 'buzz')
-  // List(9, 10)
-  //
-  // pattern : List('buzz', 'fizz')
-  // List(5, 6)
-  //
-  // pattern : List('fizz', '', 'buzz', 'fizz')
-  // List(3, 4, 5, 6)
-  //
-  // pattern : List('fizz', '', '', 'fizz')
-  // List(6, 7, 8, 9)
-  //
-  // pattern : List('fizz', '', '', 'fizz', 'buzz')
-  // List(6, 7, 8, 9, 10)
-}&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;sql&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-sql&quot;&gt;-- SQL
-select
-  user_name, count(*)
-from user_tables
-where user_name like 'SCOT%'
-group by user_name
-having count(*) &amp;gt; 1
-order by 1
-/&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;vb&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-vb&quot;&gt;Private Sub Foo
-   MsgBox &amp;quot;Hello, world&amp;quot;
-End Sub&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;java&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-java&quot;&gt;// JAVA
-public class Foo extends Hoge {
-    // 適当な定数
-    private static final int BOO = 0;
-    // メインだけ書いてみる
-    public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, misaki!&amp;quot;);
-    }
-}&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;html&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-html&quot;&gt;&amp;lt;!-- HTML --&amp;gt;
-&amp;lt;table&amp;gt;
-  &amp;lt;tbody&amp;gt;
-    &amp;lt;tr&amp;gt;
-      &amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt;
-      &amp;lt;td&amp;gt;2&amp;lt;/td&amp;gt;
-    &amp;lt;/tr&amp;gt;
-  &amp;lt;/tbody&amp;gt;
-&amp;lt;/table&amp;gt;
-&amp;lt;pre&amp;gt;
-  hoge fuga
-&amp;lt;/pre&amp;gt;
-Hello, &amp;lt;B&amp;gt;&amp;lt;I&amp;gt;misaki!&amp;lt;/I&amp;gt;&amp;lt;/B&amp;gt;&amp;lt;br&amp;gt;&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;css&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-css&quot;&gt;/* =============================================================================
-   HTML5 Boilerplate CSS: h5bp.com/css
-   ========================================================================== */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;shell&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-sh&quot;&gt;bash$ cat ./hello.sh
-#!/bin/sh
-echo &amp;quot;hello, misaki.&amp;quot;
-bash$ chmod +x ./hello.sh
-bash$ ./hello.sh
-hello, misaki.
-bash$&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;ruby&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-ruby&quot;&gt;module Nendo&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>個人的な misaki TODO</title><link>http://localhost:8080/2012-08/post3.html</link><updated>2012-08-08T00:00:00</updated><id>http://localhost:8080/2012-08/post3.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;個人的なTODO をとりあえずメモっときます。&lt;/p&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;read more ... (続きを読む) 記法の導入&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
-そもそもは、Index ページに post のタイトルと日付しか並ばない、というの
-が寂しく思えた、というのが発端です。Index ページに各 post の先頭いくら
-かを表示、というのが簡単そうで難しい。ブログエンジンによっては、read
-more ... を記述するための記法があったりするのですが、結構めんどくさそ
-う。なので、さしあったっては、各 post の内容を簡単にあらわす情報を、
-post のメタデータとして(つまり post の先頭のコメント欄に @summary とし
-て) 記載し、その内容を Index ページから見る、という方式でとりあえず運
-用してみよう。
-&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;footnote 記法の導入&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
-これはテンプレート内オレオレ関数でできるかも。&lt;code class=&quot;prettyprint&quot;&gt;(defn footnote [s]...)&lt;/code&gt;
-みたいな関数を定義し、グローバルな変数 &lt;strong&gt;footnotes&lt;/strong&gt; とかに順次突っ込
-んでいき、section の終わりの部分で &lt;strong&gt;footnotes&lt;/strong&gt; の内容をレンダリング
-する、という感じでよいかと。こんどやってみよう。
-&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;misaki.html.conv/date-&gt;string で好みのフォーマットを指定&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;config.clj に好みの日付フォーマットを指定できるようにしたい。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;→とりあえず保留。というか date-&gt;string している箇所が少なく、そこ
-だけオレオレ関数で置き換えるだけにした。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Archive (年月別の一覧取得)&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;サイドバーに年月別のリンクを設けることができるようにしたい。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;１ページ内の最大記事数指定と next/prev リンクの設定&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;
-read more が実現できた段階で、１Index ページ内の記事数を指定できるよう
-にし、next/prev リンクを設けたい。というか、それ以前に記事をちゃんと書
-け、ということだな。
-&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;css関連の修正&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;ページヘッダのサブタイトルがおかしい。post 内 h1,h2,h3,... をそれ
-なりに装飾して節の区切りを見やすくしたい。単なる css勉強不足 orz。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;iPhone で表示したときいろいろとイタい&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;とくに pre ブロックについては、デバイス幅から完全にはみ出している。
-しかも横スクロールしたいのに折り返しになっている。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;amazon の商品画像埋め込みとか、youtube、slideshare、nicovideo 埋
-め込みとか&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;埋め込みコードが必要なのはわかるのだが、いちいち hiccup 的な感じ
-に変換するのは論外なので、なにかいい方法はないものか、考え中。&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;lisp にありがちな＊variable-name＊ (＊は半角) の表現&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;インラインで &lt;em&gt;variable-name&lt;/em&gt; と書くと、&lt;em&gt;variable-name&lt;/em&gt;
-に展開されてしまう。html/core.clj の parse-string の parse-emphasized
-が反応してしまう、ということで、markdown の書式に従っているといえば
-その通りなのだが、blog 上で表現する方法がないものか。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;例えばインラインコード &lt;code class=&quot;prettyprint&quot;&gt;*variable-name*&lt;/code&gt; と書けばよい、とする等。
-  &lt;/p&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>Embed するものの例</title><link>http://localhost:8080/2012-08/post2.html</link><updated>2012-08-07T00:00:00</updated><id>http://localhost:8080/2012-08/post2.html</id><content type="html">&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Embed gist&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;まずは Gist から。&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(gist 3234115)&lt;/pre&gt;&lt;script src=&quot;https://gist.github.com/3234115.js&quot;&gt;&lt;/script&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(gist 3234115 &amp;quot;hoge.clj&amp;quot;)&lt;/pre&gt;&lt;script src=&quot;https://gist.github.com/3234115.js?file=(&amp;quot;hoge.clj&amp;quot;)&quot;&gt;&lt;/script&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Embed youtube, slideshare, etc&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;Youtube, Slideshare 等のように、&lt;code class=&quot;prettyprint&quot;&gt;embed&lt;/code&gt; スクリプトのあるやつについて。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;こういうやつは、embed コードのダブルクオート '&quot;' を、バックスラッシュ '\' でエスケープして、素直に貼っつけてしまいましょう。&lt;/p&gt;&lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/13782976&quot; width=&quot;427&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;http://www.slideshare.net/masa0kato/clojure-programmingchapter2-13782976&quot; title=&quot;Clojure programming-chapter-2&quot; target=&quot;_blank&quot;&gt;Clojure programming-chapter-2&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;http://www.slideshare.net/masa0kato&quot; target=&quot;_blank&quot;&gt;Masao Kato&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/section&gt;&lt;/div&gt;</content></entry><entry><title>サンプルコンポーネント</title><link>http://localhost:8080/2012-06/post1.html</link><updated>2012-06-09T00:00:00</updated><id>http://localhost:8080/2012-06/post1.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;misakiで使う記法について簡単に解説しています。&lt;/p&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Link&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(link &amp;quot;label&amp;quot; &amp;quot;http://localhost/&amp;quot;)
-(link &amp;quot;http://localhost/&amp;quot;)
-(link {:target &amp;quot;_blank&amp;quot;} &amp;quot;`code`&amp;quot; &amp;quot;http://localhost/&amp;quot;)&lt;/pre&gt;&lt;a href=&quot;http://localhost/&quot;&gt;label&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://localhost/&quot;&gt;http://localhost/&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://localhost/&quot; target=&quot;_blank&quot;&gt;&lt;code class=&quot;prettyprint&quot;&gt;code&lt;/code&gt;&lt;/a&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Unordered list&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(ul (range 3))&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;0&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;2&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Definition list&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(dl {:a 1, :b 2})
-(dl [:hello &amp;quot;world&amp;quot; :foo &amp;quot;`bar`&amp;quot;])&lt;/pre&gt;&lt;dl&gt;&lt;dt&gt;a&lt;/dt&gt;&lt;dd&gt;1&lt;/dd&gt;&lt;dt&gt;b&lt;/dt&gt;&lt;dd&gt;2&lt;/dd&gt;&lt;/dl&gt;&lt;dl&gt;&lt;dt&gt;hello&lt;/dt&gt;&lt;dd&gt;world&lt;/dd&gt;&lt;dt&gt;foo&lt;/dt&gt;&lt;dd&gt;&lt;code class=&quot;prettyprint&quot;&gt;bar&lt;/code&gt;&lt;/dd&gt;&lt;/dl&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Block quote&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(blockquote
-  &amp;quot;foo
-  bar&amp;quot;
-  [:a {:href &amp;quot;#&amp;quot;} &amp;quot;baz&amp;quot;])&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;foo&lt;/p&gt;&lt;p&gt;    bar&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;#&quot;&gt;baz&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Inline code&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(code &amp;quot;clojure.core/+&amp;quot;)&lt;/pre&gt;&lt;code class=&quot;prettyprint&quot;&gt;clojure.core/+&lt;/code&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Source code&lt;/h2&gt;&lt;p&gt;Comment out following code.&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;#-CLJ
-(let [msg &amp;quot;world&amp;quot;]
-  (println &amp;quot;hello,&amp;quot; msg))
-CLJ&lt;/pre&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(let [msg &amp;quot;world&amp;quot;]
-  (println &amp;quot;hello,&amp;quot; msg))&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Paragraph&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(p &amp;quot;hello, world&amp;quot;)
-(p &amp;quot;paragraph with `inline` code&amp;quot;)&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;hello, world&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;paragraph with &lt;code class=&quot;prettyprint&quot;&gt;inline&lt;/code&gt; code&lt;/p&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;JavaScript&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(js &amp;quot;a.js&amp;quot; &amp;quot;b.js&amp;quot;)&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;&lt;div class=&quot;section&quot;&gt;&lt;section&gt;&lt;h2&gt;Style Sheet&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(css &amp;quot;a.css&amp;quot; &amp;quot;b.css&amp;quot;)&lt;/pre&gt;&lt;/section&gt;&lt;/div&gt;</content></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>misaki</title><link href="http://localhost:8080/atom.xml" rel="self" /><link href="http://localhost:8080" /><updated></updated><id>http://localhost:8080</id><author><name>@ponkore</name></author><entry><title>来年から本気出す(といっても今日は大晦日)</title><link>http://localhost:8080/2012-12/2012-last-post/index.html</link><updated>2012-12-31T00:00:00</updated><id>http://localhost:8080/2012-12/2012-last-post/index.html</id><content type="html">&lt;h2 id=&quot;G__6067&quot;&gt;&lt;span&gt;B&lt;/span&gt;log を始めるにあたって&lt;a class=&quot;dagger&quot; href=&quot;#G__6067&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;この記事を書いているのは、2012/12/31 22:00 も過ぎた、紅白歌合戦を
+やっている真っ最中です。実はこのBlog、どういうコンセプトでどういうデザ
+インで書くか、ということばかりに気を取られて、細かな詰めもなにもできて
+おりません。正直、不細工な状態のままでの公開となってしまいました。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;不細工な状態での公開は自分にとってはすごく嫌なのですが、「始めなけ
+ればなにも始まらない」ということを自分はよく知っているつもりなので、こ
+まかな修正はおいおいやっていくにしても、とりあえずスタートラインには立
+とう、と思った次第です。&lt;/p&gt;&lt;h2 id=&quot;G__6068&quot;&gt;&lt;span&gt;記&lt;/span&gt;事の内容について&lt;a class=&quot;dagger&quot; href=&quot;#G__6068&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;基本的には「技術系Blog」に徹底しようと思っています。自分の日々の出
+来事や心情とかはあまり書きません。そのかわり、自分が興味を示している技
+術的な事柄について、書き記す場にしたいと思っています。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;ただ、「自分が興味を示している技術」といっても幅が広すぎても発散し
+て面白くなくなりそうなので、ソフトウェア関連、位の縛りをかけておきます。
+&lt;/p&gt;&lt;h2 id=&quot;G__6069&quot;&gt;&lt;span&gt;2&lt;/span&gt;012年の振り返りなど&lt;a class=&quot;dagger&quot; href=&quot;#G__6069&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;自己紹介してもつまらないので、2012年に自分の身の回りであったイベン
+トで簡単に振り返ってみたいと思います。&lt;/p&gt;&lt;h3 id=&quot;G__6070&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/04/22 Kyoto.clj 第１回&lt;a class=&quot;dagger&quot; href=&quot;#G__6070&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://atnd.org/events/27149&quot;&gt;Kyoto.clj&lt;/a&gt; というイベントに参加しま
+した。実は自分は社外勉強会への参加はこれが初めてとなります。参加、といっ
+てもこのときは聞き手だけでした。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;自分は Clojure に興味を持ったのは 2011年の秋頃で、ネットや本で勉
+強をしていたのですが、イベントがあると知ったので参加してみることにしま
+した。年齢が年齢だけに(秘密ですが40後半)場違いかな、とも思ったのですが、
+やはりそこは「始めなければ始まらない」という考えに基づき行ってみました。
+今となってはこれが今年のその後の自分の行動を変革させる第１歩になってた
+んですね。&lt;/p&gt;&lt;h3 id=&quot;G__6071&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/07/28 Clojure Programming お菓子会&lt;a class=&quot;dagger&quot; href=&quot;#G__6071&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://atnd.org/events/30330&quot;&gt;Clojure Programming お菓子会&lt;/a&gt; に参
+加しました。このときは、一応自分で何か発表しようと思い、事前に自分が２
+章を担当すると宣言して、へたくそながらも資料を作って発表しました。&lt;/p&gt;&lt;iframe src=&quot;http://www.slideshare.net/slideshow/embed_code/13782976&quot; width=&quot;427&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;http://www.slideshare.net/masa0kato/clojure-programmingchapter2-13782976&quot; title=&quot;Clojure programming-chapter-2&quot; target=&quot;_blank&quot;&gt;Clojure programming-chapter-2&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;http://www.slideshare.net/masa0kato&quot; target=&quot;_blank&quot;&gt;Masao Kato&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;p class=&quot;paragraph&quot;&gt;このときは確か参加者が少なく(6名位？)、あまり緊張もしませんでした
+が、「なんか貢献したかな？」というちょっとだけハテナがつくものの実績を
+作っておいてよかったと思っています。やっぱり勉強会は発表したほうが自分
+の成長にもつながるわけですし。&lt;/p&gt;&lt;h3 id=&quot;G__6072&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/08/04 Kyoto.lisp ハッカソン&lt;a class=&quot;dagger&quot; href=&quot;#G__6072&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://atnd.org/event/E0007877&quot;&gt;Kyoto.lisp ハッカソン&lt;/a&gt; というイベ
+ントに参加しました。年齢的にもおっさんすぎる自分が参加しても良いものか、
+と不安はあったのですが、もう気持ち的には「やるしかない」という感じです。
+Kyoto.lisp #1 というイベントが春にあったのですが、参加できず ustream
+を見てるだけでしたので、ぜひ参加したいという意思だけは強くもってました。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;ただ、ハッカソンというイベントの性質上、何か自分でも「ネタ」を仕込
+んでおかないといけないのですが、手持ちで良さげなネタがない...。苦肉の
+策で、今も使っている Static Site Generator の &lt;a href=&quot;https://github.com/liquidz/misaki&quot;&gt;misaki&lt;/a&gt;
+にちょっと手を入れるだけ、というなんともしまらない結果に...。それでも、
+懇親会で lisp ネタでとても盛り上がり楽しかったのを記憶しています。&lt;/p&gt;&lt;h3 id=&quot;G__6073&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/10/21〜24 International Lisp Conference (ILC) 2012&lt;a class=&quot;dagger&quot; href=&quot;#G__6073&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://www.international-lisp-conference.org/2012/index.html&quot;&gt;Lisp の国際的なイベントILC2012&lt;/a&gt;
+に参加できませんでした orz。いにしえの Lisp マシン動態展示もあるよ、と
+事前に聞いていたのですが、日程と金銭的問題とで参加できず。ちょっと残念
+な思いをしました。&lt;/p&gt;&lt;h3 id=&quot;G__6074&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/11/10 DevLove 関西2012&lt;a class=&quot;dagger&quot; href=&quot;#G__6074&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://devlove-kansai.doorkeeper.jp/events/1757&quot;&gt;DevLove関西2012&lt;/a&gt;
+に参加。テクニカルセッションを主に聞いていたのですが、参加者、発表者と
+もに熱気がすごくて圧倒された一日でした。懇親会なしで申し込んでいたので
+すが、結局懇親会に参加。懇親会での LT 大会もかなりの勢いだったのですが、
+自分の方が体調を崩してしまい、パワーを少しもらいそこねてしまった感じで
+す。ちなみに、翌週の土曜日に Scala &amp; Play Framework 勉強会というのがあ
+り参加を申し込んでいたのですが、体調を心配してキャンセルしてしまいまし
+た。&lt;/p&gt;&lt;h3 id=&quot;G__6075&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/11/24 第２回 関数型言語勉強会 大阪&lt;a class=&quot;dagger&quot; href=&quot;#G__6075&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://atnd.org/events/33084&quot;&gt;第２回 関数型言語勉強会 大阪&lt;/a&gt;
+に参加しました。定員50名があっという間に埋まるという、恐ろしく人気の高
+い勉強会。人気が高いのは事前に知っていたので、早めに会場に入り、わりと
+前の方の席に座れたので、発表内容もはっきりと聞き取れて、いろいろと勉強
+になりました。ただ、この場で Clojure に関する発表が無かったので、次
+回があれば自分がなにかネタを仕込んで発表しようかな、と思っています。
+(そろそろ仕込み始めないとやばいのか???)&lt;/p&gt;&lt;h3 id=&quot;G__6076&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/12/01 関西Javaエンジニアの会スペシャル&lt;a class=&quot;dagger&quot; href=&quot;#G__6076&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://connpass.com/event/1261/&quot;&gt;関西Javaエンジニアの会スペシャル&lt;/a&gt;
+に参加しました。JavaOne 2012 報告、ということでこちらもかなり勢いがあ
+る感じがしました。自分は仕事では、.Net 関連のプロジェクトに関わること
+が多くなりつつあるのですが、個人的には Java 好きです。できれば今後もずっ
+と Java に関わって行きたいと思っています。&lt;/p&gt;&lt;h3 id=&quot;G__6077&quot;&gt;&lt;span&gt;2&lt;/span&gt;012/12/21 第4回大阪Jenkins勉強会&lt;a class=&quot;dagger&quot; href=&quot;#G__6077&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;a href=&quot;http://connpass.com/event/1412/&quot;&gt;第4回大阪Jenkins勉強会&lt;/a&gt;
+に参加しました。平日の夜、ということで、しかもちょっと体調不良だったの
+ですが、少々無理してでも行ったかいがありました。みんな Jenkins 大好き
+で、いろいろとノウハウをもっている人たちが、Jenkins コミュニティを引っ
+張っていっている、そんな力のようなものを感じました。体調が良ければ懇親
+会行きたかったです。&lt;/p&gt;&lt;h3 id=&quot;G__6078&quot;&gt;&lt;span&gt;ア&lt;/span&gt;ドベントカレンダーも書きました&lt;a class=&quot;dagger&quot; href=&quot;#G__6078&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;今年は昨年(2011年)以上にいろいろとアドベントカレンダーがあり、自分
+も無理しない範囲で３つ記事を書きました。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class=&quot;paragraph&quot;&gt;12/04 Lisp Reader Macro アドベントカレンダー &lt;a href=&quot;https://gist.github.com/4195740&quot;&gt;Clojure のリーダーマクロについて&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class=&quot;paragraph&quot;&gt;12/06 HENTAI アドベントカレンダー &lt;a href=&quot;https://gist.github.com/4216377&quot;&gt;Clojure から POI ってみる&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class=&quot;paragraph&quot;&gt;12/11 Lisp アドベントカレンダー &lt;a href=&quot;https://gist.github.com/4252252&quot;&gt;sqlkorma 使ってみた&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class=&quot;paragraph&quot;&gt;無理しない範囲で、と書きましたが、Lisp アドベントカレンダーは正直
+スベりましたwww。来年はもっと Lisp 力をつけないと。&lt;/p&gt;&lt;h3 id=&quot;G__6079&quot;&gt;&lt;span&gt;#&lt;/span&gt;clojure 入門者向け勉強会 #mitori_clj&lt;a class=&quot;dagger&quot; href=&quot;#G__6079&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;paragraph&quot;&gt;Clojure 入門者向けの非同期勉強会という名目で &lt;a href=&quot;http://www.zusaar.com/event/455057&quot;&gt;mitori_clj&lt;/a&gt;
+というものに参加しています(今も継続中)。&lt;a href=&quot;http://projecteuler.net/&quot;&gt;Project Euler&lt;/a&gt;
+の問題を Clojure で解いて、コードを Gist で公開して有識者に突っ込んで
+もらう、というものです。Clojure も Project Euler も奥が深い...。いろい
+ろと勉強になってます。&lt;/p&gt;&lt;h2 id=&quot;G__6080&quot;&gt;&lt;span&gt;2&lt;/span&gt;013年に向けて&lt;a class=&quot;dagger&quot; href=&quot;#G__6080&quot;&gt;&amp;dagger;&lt;/a&gt;&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;来年まであと30分を切りましたwww 。2012年はなんだかんだでまとまった
+量のプログラムといえば Clojure か Emacs Lisp しか書いていない、という
+驚愕の事実がありました(仕事を休職していたのが大きいのですが...)。来年
+は、Clojure をどうにかこうにか仕事場に持ち込めないか、考えてみたいです
+ね。&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;あと、昨年中途半端な状態で放置しているもの(GIS/MapServer 関連、ClojureCLR、ExcelDNA、etc)
+をなんとか自分の「味方」に付けることができるようにしたいなぁ。&lt;/p&gt;</content></entry></feed>
