@@ -18,7 +18,7 @@ body:before { /* top shadow */
   z-index: 100;
 }
 
-body h2 {
+body article h2 {
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   -webkit-box-shadow: 0 2px 0 0 rgba(255, 255, 255, .3);
      -moz-box-shadow: 0 2px 0 0 rgba(255, 255, 255, .3);
@@ -26,7 +26,7 @@ body h2 {
           box-shadow: 0 2px 0 0 rgba(255, 255, 255, .3);
 }
 
-body h3 {
+body article h3 {
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   -webkit-box-shadow: 0 2px 0 0 rgba(255, 255, 255, .3);
      -moz-box-shadow: 0 2px 0 0 rgba(255, 255, 255, .3);
@@ -34,9 +34,30 @@ body h3 {
           box-shadow: 0 2px 0 0 rgba(255, 255, 255, .3);
 }
 
+/* for eye-catche-image */
 body .ink-container .eye-img {
   float: left;
   margin-right: 10px;
+}
+
+body .ink-container .page-header .tag-and-date .date {
+  border: none;
+  float:right;
+}
+
+body .ink-container .page-header .tag-and-date .ink-navigation {
+  float:left;
+  font-size:small;
+}
+
+/* for about page */
+body .ink-container .my-profile {
+  background-color: white;
+  font-size:80%;
+}
+
+body .ink-container .my-icon-link {
+  float:left;
 }
 
 /* INK:LARGE SCREENS */
