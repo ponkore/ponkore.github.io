@@ -59,11 +59,10 @@ $(function() {
           labelOutlineWidth: 2
   }});
 
-  function create_features(url, layer_name, create_feature_fn, layer_stylemap) {
+  function create_features(url, create_feature_fn, layer) {
     var geojson_format = new OpenLayers.Format.GeoJSON();
     $.getJSON(url, "",
       function(data, textStatus, jqXHR) {
-        var layer = new OpenLayers.Layer.Vector(layer_name, layer_stylemap);
         $.each(data["features"], function(i, val) {
           var geometry = geojson_format.parseGeometry(val["geometry"]);
           geometry.transform(
@@ -72,7 +71,6 @@ $(function() {
           );
           layer.addFeatures([create_feature_fn(val, geometry)]);
         });
-        map.addLayer(layer);
      });
   }
 
@@ -100,6 +98,11 @@ $(function() {
   var url1 = "json/JRW-railroad.geojson";
   var url2 = "json/JRW-stations.geojson";
 
-  create_features(url1, "Line", feature_railroad_fn, { styleMap: railroadDrawStyle });
-  create_features(url2, "Station", feature_station_fn, { styleMap: stationDrawStyle });
+  var layer = new OpenLayers.Layer.Vector("Line", { styleMap: railroadDrawStyle });
+  map.addLayer(layer);
+  create_features(url1, feature_railroad_fn, layer);
+
+  var layer = new OpenLayers.Layer.Vector("Station", { styleMap: stationDrawStyle });
+  map.addLayer(layer);
+  create_features(url2, feature_station_fn, layer);
 });
