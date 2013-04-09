@@ -27,13 +27,13 @@ $(function() {
   // see http://dev.openlayers.org/releases/OpenLayers-2.10/doc/apidocs/files/OpenLayers/Feature/Vector-js.html#OpenLayers.Feature.Vector.style
   var railroadDrawStyle = new OpenLayers.StyleMap({
       'default':{
-          strokeColor: "#000000",
+          strokeColor: "${linecolor}",
           strokeOpacity: 1,
           strokeWidth: 4.5,
           strokeDashstyle: "solid", // "dash",
           strokeLinecap: "square",
           label : "${name}",
-          fontColor: "red",
+          fontColor: "${fontcolor}",
           fontSize: "12px",
           fontFamily: "Courier New, monospace",
           fontWeight: "bold",
@@ -51,7 +51,7 @@ $(function() {
           fillColor: "#0000ff",
           fillOpacity: 1.0,
           label : "${name}",
-          fontColor: "black",
+          fontColor: "${fontcolor}",
           fontSize: "10px",
           fontFamily: "Courier New, monospace",
           fontWeight: "bold",
@@ -79,7 +79,9 @@ $(function() {
   function feature_railroad_fn(val, geometry) {
     var feature = new OpenLayers.Feature.Vector(geometry, {
       id: val["id"],
-      name: val["properties"]["N05_002"] // 線名
+      name: val["properties"]["N05_002"], // 線名
+      linecolor: (val["properties"]["N05_002"] == "山陽新幹線" ? "#0000FF" : "#000000"),
+      fontcolor: (val["properties"]["N05_002"] == "山陽新幹線" ? "#0000FF" : "#FF0000")
     });
     return feature;
   }
@@ -87,7 +89,8 @@ $(function() {
   function feature_station_fn(val, geometry) {
     var feature = new OpenLayers.Feature.Vector(geometry, {
       id: val["id"],
-      name: val["properties"]["N05_011"] // 駅名
+      name: val["properties"]["N05_011"], // 駅名
+      fontcolor: (val["properties"]["N05_002"] == "山陽新幹線" ? "#0000FF" : "#000000")
     });
     return feature;
   }
