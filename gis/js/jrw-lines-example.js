@@ -17,6 +17,10 @@ $(function() {
       new OpenLayers.Control.LayerSwitcher(),
       new OpenLayers.Control.ScaleLine(),
       new OpenLayers.Control.Attribution()],
+    eventListeners: {
+      "moveend": mapMoved,
+      "zoomend": mapZoomEnd
+    },
     maxResolution: 'auto'
   });
   var lonLat = new OpenLayers.LonLat(lon, lat).transform(
@@ -62,27 +66,6 @@ $(function() {
      });
   }
 
-  function feature_railroad_fn(val, geometry) {
-    var isShinkansen = (val["properties"]["N05_002"] == "山陽新幹線");
-    var feature = new OpenLayers.Feature.Vector(geometry, {
-      id: val["id"],
-      name: val["properties"]["N05_002"], // 線名
-      linecolor: (isShinkansen ? "#0000FF" : "#000000"),
-      fontcolor: (isShinkansen ? "#0000FF" : "#FF0000")
-    });
-    return feature;
-  }
-
-  function feature_station_fn(val, geometry) {
-    var isShinkansen = (val["properties"]["N05_002"] == "山陽新幹線");
-    var feature = new OpenLayers.Feature.Vector(geometry, {
-      id: val["id"],
-      name: val["properties"]["N05_011"], // 駅名
-      fontcolor: (isShinkansen ? "#0000FF" : "#000000")
-    });
-    return feature;
-  }
-
   function feature_composed_fn(val, geometry) {
     var isShinkansen = (val["properties"]["N05_002"] == "山陽新幹線");
     var isStation = (val["geometry"]["type"] == "Point");
@@ -96,6 +79,20 @@ $(function() {
     });
     return feature;
   }
+
+  function mapMoved(event) {
+    log(event.type);
+  }
+
+  function mapZoomEnd(event) {
+    log(event.type + "/" + map.numZoomLevels + "/" + map.getZoom());
+    var displayStationLabel = (map.getZoom() > 12);
+  }
+
+  function log(msg) {
+    document.getElementById("output").innerHTML += msg + "\n";
+  }
+
   var urls = [
       "json/JRW-000-sanyoshinkansen.geojson",
       "json/JRW-001-hokurikusen.geojson",
