@@ -13,26 +13,33 @@ pre .atn, code .atn { color: #bdb76b; } /* html/xml attribute name  - khaki */
 pre .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
 pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
 
-pre.prettyprint, code.prettyprint {
+code.prettyprint {
   background-color: #000;
-  -webkit-border-radius: 8px;
-   -khtml-border-radius: 8px;
-     -moz-border-radius: 8px;
-      -ms-border-radius: 8px;
-       -o-border-radius: 8px;
-          border-radius: 8px;
-
-  -webkit-box-shadow:0 5px 10px #aaa;
-     -moz-box-shadow:0 5px 10px #aaa;
-      -ms-box-shadow:0 5px 10px #aaa;
-       -o-box-shadow:0 5px 10px #aaa;
-          box-shadow:0 5px 10px #aaa;
-
-  font-size: small;
+  -webkit-border-radius: 2px;
+   -khtml-border-radius: 2px;
+     -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+       -o-border-radius: 2px;
+          border-radius: 2px;
 }
 
 pre.prettyprint {
-  width: 85%;
+  background-color: #000;
+  -webkit-border-radius: 3px;
+   -khtml-border-radius: 3px;
+     -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+       -o-border-radius: 3px;
+          border-radius: 3px;
+
+  -webkit-box-shadow:0 3px 3px #aaa;
+     -moz-box-shadow:0 3px 3px #aaa;
+      -ms-box-shadow:0 3px 3px #aaa;
+       -o-box-shadow:0 3px 3px #aaa;
+          box-shadow:0 3px 3px #aaa;
+}
+
+pre.prettyprint {
   margin: 0.5em auto;
   padding: 1em;
   word-wrap: break-word;
