@@ -1,10 +1,8 @@
-/* Author:
-*/
-(function(window, undefined){
-    $(function(){
-        prettyPrint();
-    });
-}(this));
+/* hilight.js (http://highlightjs.org/) (2013/12/07)
+ */
+$(document).ready(function() {
+  $('pre.prettyprint').each(function(i, e) {hljs.highlightBlock(e)});
+});
 /* facebook like button (2013/11/18)
  */
 (function(d, s, id) {

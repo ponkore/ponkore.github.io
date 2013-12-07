@@ -27,3 +27,38 @@ body .social-buttons li {
   margin-left: 4px;
   list-style-type: none;
 }
+
+body code.prettyprint {
+  background: #CCCCFF;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  -webkit-border-radius: 2px;
+   -khtml-border-radius: 2px;
+     -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+       -o-border-radius: 2px;
+          border-radius: 2px;
+}
+
+body pre.prettyprint {
+  background: #EEEEFF;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  font-size: 0.8em;
+  line-height: 1.5;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  overflow: auto;
+  -webkit-border-radius: 3px;
+   -khtml-border-radius: 3px;
+     -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+       -o-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow:0 3px 3px #aaa;
+     -moz-box-shadow:0 3px 3px #aaa;
+      -ms-box-shadow:0 3px 3px #aaa;
+       -o-box-shadow:0 3px 3px #aaa;
+          box-shadow:0 3px 3px #aaa;
+}
