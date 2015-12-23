@@ -1,25 +1,123 @@
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="utf-8"><meta content="ja" http-equiv="Content-Language"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><title>(カッコの中の小人) - QGIS 1.8 の SHAPE ファイル文字化け対策について</title><link href="/atom.xml" rel="alternate" title="QGIS 1.8 の SHAPE ファイル文字化け対策について" type="application/atom+xml"><meta content="This is @ponkore's blog" name="description"><meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport"><meta content="True" name="HandheldFriendly"><meta content="320" name="MobileOptimized"><meta content="@ponkore" name="author"><link href="/favicon.ico" rel="shortcut icon"><link href="/css/github.css" rel="stylesheet" type="text/css"><link href="http://fastly.ink.sapo.pt/3.1.1/css/ink.css" rel="stylesheet" type="text/css"><link href="/css/main.css" rel="stylesheet" type="text/css"></head><body><div class="ink-grid"><header class="ink-grid"><div class="vertical-space"><h2 id="title"><a href="/">(カッコの中の小人)</a></h2></div></header><nav class="ink-navigation"><ul class="menu horizontal flat blue"><li><a href="/">Home</a></li><li><a href="/archives.html">Archives</a></li><li><a href="/about.html">About me</a></li></ul></nav><div class="ink-grid vertical-space"></div><div class="page-header"><h2><a>QGIS 1.8 の SHAPE ファイル文字化け対策について</a></h2><div class="tag-and-date"><div class="date">2013-05-21</div></div><nav class="ink-navigation"><ul class="pills"><li><span><a href="/tag/gis.html">gis</a></span></li></ul></nav></div><article><div class="post"><h3>QGIS 1.8 の SHAPE ファイルの読み込み時の文字化けについて</h3><p class="paragraph">国土数値情報で公開されている SHAPE ファイル等、日本語の属性情報をもつ SHAPE ファイルを QGIS に読み込むときには、SHAPE ファイルのエンコーディングに合わせたエンコーディングを指定する必要があります。国土数値情報の場合は、<strong>Shift_JIS</strong> を指定すればよいです(Shift_JIS、SJIS 以外を指定すると文字化けした、はず)。</p><p class="paragraph">ところが、無事に読み込みに成功しても、別の SHAPE ファイルに保存したりすると、保存先の SHAPE ファイルが文字化けしてしまうことがあります。というか、「読み込みに成功してるのに何で？？？」とずっと思っていました。</p><p class="paragraph">が、同じ悩みを抱えている人が他にもおられたようで、解決策がありました。qgis に環境変数として <code class="prettyprint">SHAPE_ENCODING=""</code> を指定する、という方法です。これを指定すると、ベクタレイヤーを別 SHAPEFILE に保存したりする際に文字化けすることがなくなりました(自分は保存時には UTF-8 を指定するようにしています)。</p><pre class="prettyprint bash">#
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="ja" http-equiv="Content-Language">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>(カッコの中の小人) - QGIS 1.8 の SHAPE ファイル文字化け対策について</title>
+    <link href="/atom.xml" rel="alternate" title="QGIS 1.8 の SHAPE ファイル文字化け対策について" type="application/atom+xml">
+    <meta content="This is @ponkore's blog" name="description">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="320" name="MobileOptimized">
+    <meta content="@ponkore" name="author">
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="/css/github.css" rel="stylesheet" type="text/css">
+    <link href="http://fastly.ink.sapo.pt/3.1.1/css/ink.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="ink-grid">
+        <header class="ink-grid">
+            <div class="vertical-space">
+                <h2 id="title"><a href="/">(カッコの中の小人)</a></h2></div>
+        </header>
+        <nav class="ink-navigation">
+            <ul class="menu horizontal flat blue">
+                <li><a href="/">Home</a></li>
+                <li><a href="/archives.html">Archives</a></li>
+                <li><a href="/about.html">About me</a></li>
+            </ul>
+        </nav>
+        <div class="ink-grid vertical-space"></div>
+        <div class="page-header">
+            <h2><a>QGIS 1.8 の SHAPE ファイル文字化け対策について</a></h2>
+            <div class="tag-and-date">
+                <div class="date">2013-05-21</div>
+            </div>
+            <nav class="ink-navigation">
+                <ul class="pills">
+                    <li><span><a href="/tag/gis.html">gis</a></span></li>
+                </ul>
+            </nav>
+        </div>
+        <article>
+            <div class="post">
+                <h3>QGIS 1.8 の SHAPE ファイルの読み込み時の文字化けについて</h3>
+                <p class="paragraph">国土数値情報で公開されている SHAPE ファイル等、日本語の属性情報をもつ SHAPE ファイルを QGIS に読み込むときには、SHAPE ファイルのエンコーディングに合わせたエンコーディングを指定する必要があります。国土数値情報の場合は、<strong>Shift_JIS</strong> を指定すればよいです(Shift_JIS、SJIS 以外を指定すると文字化けした、はず)。</p>
+                <p class="paragraph">ところが、無事に読み込みに成功しても、別の SHAPE ファイルに保存したりすると、保存先の SHAPE ファイルが文字化けしてしまうことがあります。というか、「読み込みに成功してるのに何で？？？」とずっと思っていました。</p>
+                <p class="paragraph">が、同じ悩みを抱えている人が他にもおられたようで、解決策がありました。qgis に環境変数として <code class="prettyprint">SHAPE_ENCODING=""</code> を指定する、という方法です。これを指定すると、ベクタレイヤーを別 SHAPEFILE に保存したりする際に文字化けすることがなくなりました(自分は保存時には UTF-8 を指定するようにしています)。</p><pre class="prettyprint bash">#
 # QGIS 1.8 では Shapefile 読み書き時に文字コード変換が変にかかってしまうので、
 # 環境変数 SHAPE_ENCODING を空白にして、QGIS システム内では文字コード変換を
 # させずに、ダイアログにて明示的に指定する。
 #
  
 bash$ export SHAPE_ENCODING=&quot;&quot;
-bash$ open -a qgis</pre><h3>Python のバージョンによる問題</h3><p class="paragraph">ところが問題はこれだけではありませんでした。今度は QGIS 起動時にエラーダイアログが出ます。</p><pre class="prettyprint bash"># メッセージはこんな感じ
-Couldn't load plugin fTools due an error when calling its classFactory() method...</pre><p class="paragraph">SHAPE_ENCODING を指定した時に限り必ず表示されるようになってしまいました。</p><p class="paragraph">これはどうも python のバージョンによる問題のようです。 <a href="http://gis.stackexchange.com/questions/48364/couldnt-load-plugin-ftools-due-an-error-when-calling-its-classfactory-method">ここ</a> に類似のエラーがあったので参考にしました。自分の環境には MacPorts の python と OSX(10.7) 標準の python が入っております。</p><pre class="prettyprint bash"># MacPorts python
+bash$ open -a qgis</pre>
+                <h3>Python のバージョンによる問題</h3>
+                <p class="paragraph">ところが問題はこれだけではありませんでした。今度は QGIS 起動時にエラーダイアログが出ます。</p><pre class="prettyprint bash"># メッセージはこんな感じ
+Couldn't load plugin fTools due an error when calling its classFactory() method...</pre>
+                <p class="paragraph">SHAPE_ENCODING を指定した時に限り必ず表示されるようになってしまいました。</p>
+                <p class="paragraph">これはどうも python のバージョンによる問題のようです。 <a href="http://gis.stackexchange.com/questions/48364/couldnt-load-plugin-ftools-due-an-error-when-calling-its-classfactory-method">ここ</a> に類似のエラーがあったので参考にしました。自分の環境には MacPorts の python と OSX(10.7) 標準の python が入っております。</p><pre class="prettyprint bash"># MacPorts python
 bash$ python --version
 Python 2.7.5
 bash$ /usr/bin/python
 Python 2.7.1
-bash$</pre><p class="paragraph">正確にはインストールされているライブラリ等の差異だと思うのですが、qgis が使用する python を /usr/bin/python になるよう、/usr/bin のパスを前に来るように指定すると、エラーダイアログが出なくなりました。</p><pre class="prettyprint bash"># 自分の自宅環境(OSX Lion) だと上記で動かなかった。MacPorts の python (2.7.3) だとダメで
+bash$</pre>
+                <p class="paragraph">正確にはインストールされているライブラリ等の差異だと思うのですが、qgis が使用する python を /usr/bin/python になるよう、/usr/bin のパスを前に来るように指定すると、エラーダイアログが出なくなりました。</p><pre class="prettyprint bash"># 自分の自宅環境(OSX Lion) だと上記で動かなかった。MacPorts の python (2.7.3) だとダメで
 # /usr/bin/python (2.7.1) だと動く。なので、PATH 環境変数にも依存...。
 # 結局、最終的には、
  
 bash$ export SHAPE_ENCODING=&quot;&quot;
 bash$ PATH=/usr/bin:$PATH
-bash$ open -a qgis</pre><p class="paragraph">Python 詳しくないし、原因を真面目に探して修正しだしたりしたらキリがないので、とりあえずはこれでしばらく運用してみます。</p></div></article><ul class="social-buttons"><li><a class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" data-hatena-bookmark-title="QGIS 1.8 の SHAPE ファイル文字化け対策について" href="http://b.hatena.ne.jp/entry/http://ponkore.github.io/2013-05/qgis-charset/index.html" title="このエントリーをはてなブックマークに追加"><img alt="" height="20" src="http://b.st-hatena.com/images/entry-button/button-only.gif" style="border: none;" width="20"></a><script async="async" charset="utf-8" src="http://b.st-hatena.com/js/bookmark_button.js" type="text/javascript"></script></li><li><a href="http://www.tumblr.com/share" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;" title="Share on Tumblr">http://www.tumblr.com/share</a></li><li><div id="tweet_button"><a class="twitter-share-button" data-count="horizontal" data-lang="ja" href="https://twitter.com/share">ツイート</a><script src="//platform.twitter.com/widgets.js" type="text/javascript"></script></div></li><li><div class="fb-like" data-href="http://ponkore.github.io/2013-05/qgis-charset/index.html" data-layout="button_count" data-share="true" data-show-faces="false"></div></li></ul><div class="ink-grid vertical-space"></div><div><div id="disqus_thread"></div><script type="text/javascript">(function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + 'ponkoresblog' + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a class="dsq-brlink" href="http://disqus.com">comments powered by <span class="logo-disqus">Disqus</span></a></div><div class="ink-grid vertical-space"></div><footer><div class="ink-grid" style="float:right;"><a href="https://github.com/liquidz/misaki" target="_blank"><img alt="" src="http://liquidz.github.io/img/misaki_banner.svg"></a></div></footer></div><div class="ink-grid vertical-space"></div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script><script src="http://fastly.ink.sapo.pt/3.1.1/js/ink-all.js" type="text/javascript"></script><script src="/js/retina-1.1.0.min.js" type="text/javascript"></script><script src="/js/script.js" type="text/javascript"></script><script src="/js/highlight.pack.js" type="text/javascript"></script></body></html>
+bash$ open -a qgis</pre>
+                <p class="paragraph">Python 詳しくないし、原因を真面目に探して修正しだしたりしたらキリがないので、とりあえずはこれでしばらく運用してみます。</p>
+            </div>
+        </article>
+        <ul class="social-buttons">
+            <li>
+                <a class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" data-hatena-bookmark-title="QGIS 1.8 の SHAPE ファイル文字化け対策について" href="http://b.hatena.ne.jp/entry/http://ponkore.github.io/2013-05/qgis-charset/index.html" title="このエントリーをはてなブックマークに追加"><img alt="" height="20" src="http://b.st-hatena.com/images/entry-button/button-only.gif" style="border: none;" width="20"></a>
+                <script async="async" charset="utf-8" src="http://b.st-hatena.com/js/bookmark_button.js" type="text/javascript"></script>
+            </li>
+            <li><a href="http://www.tumblr.com/share" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;" title="Share on Tumblr">http://www.tumblr.com/share</a></li>
+            <li>
+                <div id="tweet_button"><a class="twitter-share-button" data-count="horizontal" data-lang="ja" href="https://twitter.com/share">ツイート</a>
+                    <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+                </div>
+            </li>
+            <li>
+                <div class="fb-like" data-href="http://ponkore.github.io/2013-05/qgis-charset/index.html" data-layout="button_count" data-share="true" data-show-faces="false"></div>
+            </li>
+        </ul>
+        <div class="ink-grid vertical-space"></div>
+        <div>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                (function() {
+                    var dsq = document.createElement('script');
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = 'http://' + 'ponkoresblog' + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a class="dsq-brlink" href="http://disqus.com">comments powered by <span class="logo-disqus">Disqus</span></a></div>
+        <div class="ink-grid vertical-space"></div>
+        <footer>
+            <div class="ink-grid" style="float:right;">
+                <a href="https://github.com/liquidz/misaki" target="_blank"><img alt="" src="http://liquidz.github.io/img/misaki_banner.svg"></a>
+            </div>
+        </footer>
+    </div>
+    <div class="ink-grid vertical-space"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="http://fastly.ink.sapo.pt/3.1.1/js/ink-all.js" type="text/javascript"></script>
+    <script src="/js/retina-1.1.0.min.js" type="text/javascript"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="/js/highlight.pack.js" type="text/javascript"></script>
+</body>
+
+</html>
