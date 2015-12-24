@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<atom:link href='http://blogawesome.com/' rel='self' type='application/rss+xml'/>
+<title>
+My Awesome Blog
+</title>
+<link>
+http://blogawesome.com/
+</link>
+<description>
+This blog is awesome
+</description>
+<lastBuildDate>
+Fri, 25 Dec 2015 00:10:28 +0900
+</lastBuildDate>
+<generator>
+clj-rss
+</generator>
+<item>
+<guid>
+http://blogawesome.com/posts/2014-10-10-adoc-post.html
+</guid>
+<link>
+http://blogawesome.com/posts/2014-10-10-adoc-post.html
+</link>
+<title>
+Adoc Post
+</title>
+<description>
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_example_asciidoc_post&quot;&gt;Example Asciidoc Post&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is an example asciidoc post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can use a manually placed table of contents by setting &lt;code&gt;:toc false&lt;/code&gt; in the front matter, but use &lt;code&gt;:toc: macro&lt;/code&gt; at the top of the post, and &lt;code&gt;toc::[]&lt;/code&gt; where the table of contents is supposed to be, like here:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
+&lt;div id=&quot;toctitle&quot; class=&quot;title&quot;&gt;Table of Contents&lt;/div&gt;
+&lt;ul class=&quot;sectlevel1&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#_example_asciidoc_post&quot;&gt;Example Asciidoc Post&lt;/a&gt;
+&lt;ul class=&quot;sectlevel2&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#_section_1&quot;&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#_section_2&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_section_1&quot;&gt;Section 1&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Heading&lt;/div&gt;
+&lt;p&gt;With some text and maybe even a bulleted list:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Thing 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Thing 2&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Or how about some &lt;strong&gt;bold&lt;/strong&gt; or &lt;em&gt;italicized&lt;/em&gt; text?&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_section_2&quot;&gt;Section 2&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Will a code snippet work?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;bash&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;$ echo &quot;foo&quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;clojure&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;language-clojure&quot; data-lang=&quot;clojure&quot;&gt;(defn echo [s]
+  (println s))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Fri, 10 Oct 2014 00:00:00 +0900
+</pubDate>
+</item>
+</channel>
+</rss>
