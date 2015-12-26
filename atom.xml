@@ -1,28 +1,250 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
 <channel>
-<atom:link href='http://blogawesome.com/' rel='self' type='application/rss+xml'/>
+<atom:link href='https://ponkore.github.io/' rel='self' type='application/rss+xml'/>
 <title>
-My Awesome Blog
+(カッコの中の小人)
 </title>
 <link>
-http://blogawesome.com/
+https://ponkore.github.io/
 </link>
 <description>
-This blog is awesome
+主にProgrammingなネタ集です。
 </description>
 <lastBuildDate>
-Sat, 26 Dec 2015 02:11:13 +0900
+Sat, 26 Dec 2015 17:39:51 +0900
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
 <item>
 <guid>
-http://blogawesome.com/posts/2014-10-10-adoc-post.html
+https://ponkore.github.io/posts/2015-12-25-asciidoc-sample.html
 </guid>
 <link>
-http://blogawesome.com/posts/2014-10-10-adoc-post.html
+https://ponkore.github.io/posts/2015-12-25-asciidoc-sample.html
+</link>
+<title>
+AsciiDoc Sample
+</title>
+<description>
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;_welcome_to_asciidoclive&quot;&gt;Welcome to AsciiDocLIVE!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;AsciiDocLIVE is a &lt;strong&gt;free online &lt;a href=&quot;http://www.methods.co.nz/asciidoc/&quot;&gt;AsciiDoc&lt;/a&gt;
+editor&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Just type AsciiDoc source text into the &lt;strong&gt;left&lt;/strong&gt; pane,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;and the live preview appears in the &lt;strong&gt;right&lt;/strong&gt; pane!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_what_s_asciidoc&quot;&gt;What&amp;#8217;s AsciiDoc?&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;AsciiDoc is a human-readable text document format for writing notes,
+documentation, articles, books, ebooks, slideshows, web pages, man pages and
+blogs, and more. AsciiDoc files can be translated to many formats including
+HTML, PDF, EPUB, and man page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To learn more, visit the AsciiDoc home page at
+&lt;a href=&quot;http://www.methods.co.nz/asciidoc/&quot; class=&quot;bare&quot;&gt;http://www.methods.co.nz/asciidoc/&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;_about_asciidoclive&quot;&gt;About AsciiDocLIVE&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;AsciiDocLIVE is currently in &lt;strong&gt;alpha&lt;/strong&gt; stage. This means there are likely a &lt;em&gt;lot&lt;/em&gt;
+of bugs, and even more ways to make it better.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you have any questions, suggestions or other feedback, we&amp;#8217;d greatly
+appreciate it if you could drop us an e-amil at &lt;a href=&quot;mailto:feedback@asciidoclive.com&quot;&gt;feedback@asciidoclive.com&lt;/a&gt;. Hope
+to hear from you soon!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;cheat-sheet&quot;&gt;AsciiDoc Mini Cheat Sheet&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To help you get started, here&amp;#8217;re some snippets from the
+&lt;a href=&quot;http://powerman.name/doc/asciidoc&quot;&gt;AsciiDoc Cheet Sheet&lt;/a&gt;. Feel free to poke
+around :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_text_styles&quot;&gt;Text Styles&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;normal, &lt;em&gt;italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, mono.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;``double quoted'', `single quoted'.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;normal, &lt;sup&gt;super&lt;/sup&gt;, &lt;sub&gt;sub&lt;/sub&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;passthru &lt;strong&gt;bold&lt;/strong&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_tables&quot;&gt;Tables&lt;/h4&gt;
+&lt;table class=&quot;tableblock frame-all grid-all spread&quot;&gt;
+&lt;caption class=&quot;title&quot;&gt;Table 1. An example table&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 33%;&quot;&gt;
+&lt;col style=&quot;width: 33%;&quot;&gt;
+&lt;col style=&quot;width: 33%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Col 1&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Col 2&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Col 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;6&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Three items&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;d&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;1&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Item 1&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;a&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;2&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Item 2&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;b&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;3&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Item 3&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;c&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_lists&quot;&gt;Lists&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Q: How did the programmer die in the shower?
+A: He read the shampoo instructions:&lt;/p&gt;
+&lt;div class=&quot;olist arabic&quot;&gt;
+&lt;ol class=&quot;arabic&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Lather, rinse.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repeat.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are only 10 kinds of people in this world:&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Those who understand binary.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Those who don&amp;#8217;t.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;_misc&quot;&gt;Misc&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Code listings:&lt;/p&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;#!/usr/bin/env python
+import antigravity
+try:
+  antigravity.fly()
+except FlytimeError as e:
+  # um...not sure what to do now.
+  pass&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Quotes:&lt;/p&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+It was the best of times, it was the worst of times, it was the age of wisdom,
+it was the age of foolishness&amp;#8230;&amp;#8203;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Charles Dickens&lt;br&gt;
+&lt;cite&gt;A Tale of Two Cities&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://asciidoclive.com/&quot;&gt;AsciiDocLIVE&lt;/a&gt; is awesome!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;a href=&quot;#cheat-sheet&quot;&gt;top of cheat sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Images:&lt;/p&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;https://i.imgur.com/AEkqoRn.jpg&quot; alt=&quot;not bad.&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pass-through: &lt;div align=&quot;center&quot;&gt;&lt;b&gt;pass through content&lt;/b&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Fri, 25 Dec 2015 00:00:00 +0900
+</pubDate>
+</item>
+<item>
+<guid>
+https://ponkore.github.io/posts/2014-10-10-adoc-post.html
+</guid>
+<link>
+https://ponkore.github.io/posts/2014-10-10-adoc-post.html
 </link>
 <title>
 Adoc Post
