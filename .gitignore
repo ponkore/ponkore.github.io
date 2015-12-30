@@ -4,3 +4,4 @@
 /.sass-cache
 /ink
 *.css.map
+/css/*.scss
