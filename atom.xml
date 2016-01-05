@@ -3,7 +3,7 @@
 <channel>
 <atom:link href='https://ponkore.github.io/' rel='self' type='application/rss+xml'/>
 <title>
-(カッコの中の小人)
+(a little man in parenthesis)
 </title>
 <link>
 https://ponkore.github.io/
@@ -12,7 +12,7 @@ https://ponkore.github.io/
 主にProgrammingなネタ集です。
 </description>
 <lastBuildDate>
-Wed, 30 Dec 2015 19:59:13 +0900
+Tue, 05 Jan 2016 21:16:51 +0900
 </lastBuildDate>
 <generator>
 clj-rss
@@ -45,6 +45,7 @@ editor&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;!--more--&gt;
 &lt;div class=&quot;sect2&quot;&gt;
 &lt;h3 id=&quot;_what_s_asciidoc&quot;&gt;What&amp;#8217;s AsciiDoc?&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -259,6 +260,7 @@ Adoc Post
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;You can use a manually placed table of contents by setting &lt;code&gt;:toc false&lt;/code&gt; in the front matter, but use &lt;code&gt;:toc: macro&lt;/code&gt; at the top of the post, and &lt;code&gt;toc::[]&lt;/code&gt; where the table of contents is supposed to be, like here:&lt;/p&gt;
 &lt;/div&gt;
+&lt;!--more--&gt;
 &lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
 &lt;div id=&quot;toctitle&quot; class=&quot;title&quot;&gt;Table of Contents&lt;/div&gt;
 &lt;ul class=&quot;sectlevel1&quot;&gt;
