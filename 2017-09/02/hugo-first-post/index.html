@@ -3,17 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>(scratchpad memories)</title>
+<title>hugo でブログ書くことにしました</title>
 
 <meta name="generator" content="Hugo 0.26" />
-<meta property="og:title" content="(scratchpad memories)" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://ponkore.github.io/" />
+<meta property="og:title" content="hugo でブログ書くことにしました" />
+<meta property="og:description" content="今まで放置していたブログですが、リニューアルして久しぶりに復活させることにしました。
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://ponkore.github.io/2017-09/02/hugo-first-post/" />
 
 
 
-<meta property="og:updated_time" content="2017-09-09T18:02:36&#43;09:00"/>
+<meta property="article:published_time" content="2017-09-09T18:02:36&#43;09:00"/>
+<meta property="article:modified_time" content="2017-09-09T18:02:36&#43;09:00"/>
+
 
 
 
@@ -26,7 +30,7 @@
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-<link rel="alternate" type="application/rss+xml" title="(scratchpad memories) Feed" href="http://ponkore.github.io/index.xml">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
 <script type="text/javascript" src="/js/highlight.pack.js"></script>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
@@ -52,34 +56,98 @@
 		<div class="wrapper clearfix">
 
 
-	<main class="main-content list content" role="main"><article class="list__item post clearfix">
-	<figure class="list__thumbnail">
-		<a href="http://ponkore.github.io/2017-09/02/hugo-first-post/">
-			<img src="https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png" alt="hugo でブログ書くことにしました" />
-		</a>
-	</figure>
-	<div class="list__content clearfix">
-		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="/2017-09/02/hugo-first-post/" rel="bookmark">hugo でブログ書くことにしました</a>
-			</h3>
-			<div class="list__meta meta">
+<main class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">hugo でブログ書くことにしました</h1>
+			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="list__meta-date" datetime="2017-09-09T18:02:36">2017/09/09</time>
-			</div>
+				<time class="post__meta-date" datetime="2017-09-09T18:02:36">2017/09/09</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/programming" rel="category">Programming</a></span>
+			</p>
 		</header>
-		<div class="list__excerpt">
+		<div class="post__content clearfix">
+			<figure class="post__thumbnail">
+				<img src="https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png" alt="hugo でブログ書くことにしました">
+			</figure>
 			<p>今まで放置していたブログですが、リニューアルして久しぶりに復活させることにしました。</p>
 
 <p></p>
+
+<p>以前は <a href="https://github.com/liquidz/misaki">misaki</a> を使っていたのですが、いろいろ
+調べてみたところ <a href="https://gohugo.io/">hugo</a>が流行っていたので試してみたところ自分に
+とって使いやすそうだったので、こちらに移行することにしました。</p>
+
+<h3 id="環境メモ">環境メモ</h3>
+
+<p>現時点(2017/09/09)の自分の環境は以下の通りです(<code>hugo env</code>で表示)。</p>
+
+<pre><code>bash$ hugo env
+Hugo Static Site Generator v0.26 darwin/amd64 BuildDate: 2017-08-07T20:34:15+09:00
+GOOS=&quot;darwin&quot;
+GOARCH=&quot;amd64&quot;
+GOVERSION=&quot;go1.8.3&quot;
+bash$ 
+</code></pre>
+
+<h3 id="古いコンテンツの保存">古いコンテンツの保存</h3>
+
+<p>以前に <code>misaki</code> で作っていた数少ないコンテンツは、どれも中途半端な気がして移行する気には
+なれず、さりとて完全に消去するにはもったいない、ということで、static なファイルに generate
+して URL のパスに <code>/misaki</code> をつけてアクセスできるようにして保存しておくことにしました。</p>
+
+<p>このページの右下の <strong>Older Contents</strong> にあるリンクからたどれます。</p>
+
+<h4 id="テーマの選択">テーマの選択</h4>
+
+<p><code>hugo</code> にはたくさんの<a href="https://themes.gohugo.io/">テーマ</a>があり、選ぶのに迷いましたが、
+ブログに適したテーマのうち <a href="https://themes.gohugo.io/mainroad/">Mainroad</a> が気に入ったので
+これに決定。</p>
+
+<p>ただし、こまかなところはいろいろカスタマイズしているので、それについては別途記事を書こうかと
+思います。</p>
+
+<p>まずはリニューアル第１弾ということでこの辺で。</p>
 		</div>
-	</div>
-</article>
-
 		
+<div class="post__tags tags clearfix">
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/hugo/" rel="tag"><i class="fa fa-fw fa-tag" aria-hidden="true"></i>hugo</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/%E9%9B%91%E8%A8%98/" rel="tag"><i class="fa fa-fw fa-tag" aria-hidden="true"></i>雑記</a></li>
+	</ul>
+</div>
 
-		
-	</main>
+	</article>
+	
+	
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ponkore" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</main>
 
 <aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 	
@@ -178,3 +246,4 @@ Clojure(Script), Java, C#, JavaScript, Oracle, PL/SQL</p>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
+
