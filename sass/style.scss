@@ -270,12 +270,12 @@ pre {
     margin-bottom: 1.25rem;
     background: $other-background-color;
     border: 1px solid $border-main-color;
-    padding: 20px;
-    padding: 1.25rem;
-    white-space: pre-wrap;
-    white-space: -o-pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -webkit-pre-wrap;
+    padding: 0.25rem;
+    overflow-x: scroll;
+    white-space: pre;
+    white-space: -o-pre;
+    white-space: -moz-pre;
+    white-space: -webkit-pre;
 }
 
 code {
@@ -283,12 +283,12 @@ code {
     color: $foreground-color;
     background: $other-background-color;
     border: 1px solid $border-main-color;
-    padding: 4px;
     padding: 0.25rem;
-    white-space: pre-wrap;
-    white-space: -o-pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -webkit-pre-wrap;
+    overflow-x: scroll;
+    white-space: pre;
+    white-space: -o-pre;
+    white-space: -moz-pre;
+    white-space: -webkit-pre;
 }
 
 kbd {
