@@ -1,251 +1,124 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url>
-<loc>
-https://ponkore.github.io/404.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/archives.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/index.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2012-12/2012-last-post/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2013-01/post-sample/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2013-04/raspberry-pi/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2013-05/gis-getting-started/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2013-05/misaki-retina/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2013-05/qgis-charset/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2013-12/2013-last-post/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2014-01/kilotei-from-wikipedia/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2014-01/random-docs/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2014-01/raspberry-pi-setup/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/2014-01/tree-seq-memo/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/about.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/archives.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/pages/2/index.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/tag/clojure.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/tag/gis.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/tag/hardware.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/tag/misaki.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/tag/programming.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/tag/raspberry-pi.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/misaki/tag/web.html
-</loc>
-<lastmod>
-2016-01-09
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/pages/aboutme.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/posts/2014-10-10-adoc-post.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/posts/2015-12-25-asciidoc-sample.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/tags/asciidoc.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/tags/cryogen.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
-<url>
-<loc>
-https://ponkore.github.io/tags.html
-</loc>
-<lastmod>
-2016-01-10
-</lastmod>
-</url>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ponkore.org/post/2017-10/02/add-emacs-function-for-hugo-post/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/post/2017-09/10/keras-tensorflow-optimize/</loc>
+    <lastmod>2017-09-10T20:21:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/post/2017-09/02/hugo-first-post/</loc>
+    <lastmod>2017-09-09T18:02:36+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/archives/2017-09/</loc>
+    <lastmod>2017-09-10T20:21:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/archives/2017-10/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/archives/</loc>
+    <lastmod>2017-09-10T20:21:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/emacs/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/hugo/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/lisp/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/machine-learning/</loc>
+    <lastmod>2017-09-10T20:21:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/post/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/categories/programming/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/python/</loc>
+    <lastmod>2017-09-10T20:21:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/tensorflow/</loc>
+    <lastmod>2017-09-10T20:21:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/%E5%B0%8F%E3%83%8D%E3%82%BF/</loc>
+    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/tags/%E9%9B%91%E8%A8%98/</loc>
+    <lastmod>2017-09-09T18:02:36+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
 </urlset>

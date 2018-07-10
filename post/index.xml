@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on (scratchpad memories)</title>
+    <link>https://ponkore.org/post/</link>
+    <description>Recent content in Posts on (scratchpad memories)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 02 Oct 2017 22:09:55 +0900</lastBuildDate>
+    
+	<atom:link href="https://ponkore.org/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[小ネタ] Hugoの記事を書き始めるための emacs lisp</title>
+      <link>https://ponkore.org/post/2017-10/02/add-emacs-function-for-hugo-post/</link>
+      <pubDate>Mon, 02 Oct 2017 22:09:55 +0900</pubDate>
+      
+      <guid>https://ponkore.org/post/2017-10/02/add-emacs-function-for-hugo-post/</guid>
+      <description>&lt;p&gt;Hugoで記事を書き始めるための emacs lisp を書いてみました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TensorFlow を Intel CPU で最適化してみた</title>
+      <link>https://ponkore.org/post/2017-09/10/keras-tensorflow-optimize/</link>
+      <pubDate>Sun, 10 Sep 2017 20:21:19 +0900</pubDate>
+      
+      <guid>https://ponkore.org/post/2017-09/10/keras-tensorflow-optimize/</guid>
+      <description>&lt;p&gt;自分のローカル環境(MacBook)で少しでも実行速度を改善しようとしたときの
+メモです。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugo でブログ書くことにしました</title>
+      <link>https://ponkore.org/post/2017-09/02/hugo-first-post/</link>
+      <pubDate>Sat, 09 Sep 2017 18:02:36 +0900</pubDate>
+      
+      <guid>https://ponkore.org/post/2017-09/02/hugo-first-post/</guid>
+      <description>&lt;p&gt;今まで放置していたブログですが、リニューアルして久しぶりに復活させることにしました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
