@@ -6,10 +6,21 @@
     <description>Recent content in Programming on (scratchpad memories)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 02 Oct 2017 22:09:55 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 14:48:53 +0900</lastBuildDate>
     
 	<atom:link href="https://ponkore.org/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python から Oracle を使う際の環境設定メモ</title>
+      <link>https://ponkore.org/post/2018-07/16/prepare-python-for-oracle/</link>
+      <pubDate>Mon, 16 Jul 2018 14:48:53 +0900</pubDate>
+      
+      <guid>https://ponkore.org/post/2018-07/16/prepare-python-for-oracle/</guid>
+      <description>&lt;p&gt;Python から Oracle を使う際の環境設定メモです。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>[小ネタ] Hugoの記事を書き始めるための emacs lisp</title>

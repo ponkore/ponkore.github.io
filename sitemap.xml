@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ponkore.org/post/2018-07/16/prepare-python-for-oracle/</loc>
+    <lastmod>2018-07-16T14:48:53+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ponkore.org/post/2017-10/02/add-emacs-function-for-hugo-post/</loc>
     <lastmod>2017-10-02T22:09:55+09:00</lastmod>
   </url>
@@ -23,7 +28,7 @@
   
   <url>
     <loc>https://ponkore.org/</loc>
-    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <lastmod>2018-07-16T14:48:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -36,6 +41,12 @@
   <url>
     <loc>https://ponkore.org/archives/2017-10/</loc>
     <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ponkore.org/archives/2018-07/</loc>
+    <lastmod>2018-07-16T14:48:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,25 +86,31 @@
   </url>
   
   <url>
+    <loc>https://ponkore.org/tags/oracle/</loc>
+    <lastmod>2018-07-16T14:48:53+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ponkore.org/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ponkore.org/post/</loc>
-    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <lastmod>2018-07-16T14:48:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ponkore.org/categories/programming/</loc>
-    <lastmod>2017-10-02T22:09:55+09:00</lastmod>
+    <lastmod>2018-07-16T14:48:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ponkore.org/tags/python/</loc>
-    <lastmod>2017-09-10T20:21:19+09:00</lastmod>
+    <lastmod>2018-07-16T14:48:53+09:00</lastmod>
     <priority>0</priority>
   </url>
   
