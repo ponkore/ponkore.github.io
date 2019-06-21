@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tensorflow on (scratchpad memories)</title>
+    <title>TensorFlow on (scratchpad memories)</title>
     <link>https://ponkore.org/tags/tensorflow/</link>
-    <description>Recent content in Tensorflow on (scratchpad memories)</description>
+    <description>Recent content in TensorFlow on (scratchpad memories)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 10 Sep 2017 20:21:19 +0900</lastBuildDate>
@@ -18,9 +18,7 @@
       
       <guid>https://ponkore.org/post/2017-09/10/keras-tensorflow-optimize/</guid>
       <description>&lt;p&gt;自分のローカル環境(MacBook)で少しでも実行速度を改善しようとしたときの
-メモです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+メモです。&lt;/p&gt;</description>
     </item>
     
   </channel>

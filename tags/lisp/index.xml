@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lisp on (scratchpad memories)</title>
+    <title>lisp on (scratchpad memories)</title>
     <link>https://ponkore.org/tags/lisp/</link>
-    <description>Recent content in Lisp on (scratchpad memories)</description>
+    <description>Recent content in lisp on (scratchpad memories)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 02 Oct 2017 22:09:55 +0900</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 02 Oct 2017 22:09:55 +0900</pubDate>
       
       <guid>https://ponkore.org/post/2017-10/02/add-emacs-function-for-hugo-post/</guid>
-      <description>&lt;p&gt;Hugoで記事を書き始めるための emacs lisp を書いてみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugoで記事を書き始めるための emacs lisp を書いてみました。&lt;/p&gt;</description>
     </item>
     
   </channel>

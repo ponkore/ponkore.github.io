@@ -18,9 +18,7 @@
       
       <guid>https://ponkore.org/post/2018-07/17/webpack-for-non-spa/</guid>
       <description>&lt;p&gt;SPAでない Web Application で webpack を使おうしたときに少しハマったの
-でメモしておきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+でメモしておきます。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,9 +27,7 @@
       <pubDate>Mon, 16 Jul 2018 14:48:53 +0900</pubDate>
       
       <guid>https://ponkore.org/post/2018-07/16/prepare-python-for-oracle/</guid>
-      <description>&lt;p&gt;Python から Oracle を使う際の環境設定メモです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Python から Oracle を使う際の環境設定メモです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,9 +36,7 @@
       <pubDate>Mon, 02 Oct 2017 22:09:55 +0900</pubDate>
       
       <guid>https://ponkore.org/post/2017-10/02/add-emacs-function-for-hugo-post/</guid>
-      <description>&lt;p&gt;Hugoで記事を書き始めるための emacs lisp を書いてみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugoで記事を書き始めるための emacs lisp を書いてみました。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,9 +46,7 @@
       
       <guid>https://ponkore.org/post/2017-09/10/keras-tensorflow-optimize/</guid>
       <description>&lt;p&gt;自分のローカル環境(MacBook)で少しでも実行速度を改善しようとしたときの
-メモです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+メモです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,9 +55,7 @@
       <pubDate>Sat, 09 Sep 2017 18:02:36 +0900</pubDate>
       
       <guid>https://ponkore.org/post/2017-09/02/hugo-first-post/</guid>
-      <description>&lt;p&gt;今まで放置していたブログですが、リニューアルして久しぶりに復活させることにしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;今まで放置していたブログですが、リニューアルして久しぶりに復活させることにしました。&lt;/p&gt;</description>
     </item>
     
   </channel>

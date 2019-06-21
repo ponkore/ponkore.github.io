@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2018 07 on (scratchpad memories)</title>
+    <title>2018-07 on (scratchpad memories)</title>
     <link>https://ponkore.org/archives/2018-07/</link>
-    <description>Recent content in 2018 07 on (scratchpad memories)</description>
+    <description>Recent content in 2018-07 on (scratchpad memories)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Tue, 17 Jul 2018 09:13:54 +0900</lastBuildDate>
@@ -18,9 +18,7 @@
       
       <guid>https://ponkore.org/post/2018-07/17/webpack-for-non-spa/</guid>
       <description>&lt;p&gt;SPAでない Web Application で webpack を使おうしたときに少しハマったの
-でメモしておきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+でメモしておきます。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,9 +27,7 @@
       <pubDate>Mon, 16 Jul 2018 14:48:53 +0900</pubDate>
       
       <guid>https://ponkore.org/post/2018-07/16/prepare-python-for-oracle/</guid>
-      <description>&lt;p&gt;Python から Oracle を使う際の環境設定メモです。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Python から Oracle を使う際の環境設定メモです。&lt;/p&gt;</description>
     </item>
     
   </channel>
