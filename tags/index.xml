@@ -6,10 +6,28 @@
     <description>Recent content in Tags on (scratchpad memories)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 17 Jul 2018 09:13:54 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 22 Jun 2019 09:13:54 +0900</lastBuildDate>
     
 	<atom:link href="https://ponkore.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CircleCI</title>
+      <link>https://ponkore.org/tags/circleci/</link>
+      <pubDate>Sat, 22 Jun 2019 09:13:54 +0900</pubDate>
+      
+      <guid>https://ponkore.org/tags/circleci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://ponkore.org/tags/hugo/</link>
+      <pubDate>Sat, 22 Jun 2019 09:13:54 +0900</pubDate>
+      
+      <guid>https://ponkore.org/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>JavaScript</title>
@@ -44,15 +62,6 @@
       <pubDate>Mon, 02 Oct 2017 22:09:55 +0900</pubDate>
       
       <guid>https://ponkore.org/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://ponkore.org/tags/hugo/</link>
-      <pubDate>Mon, 02 Oct 2017 22:09:55 +0900</pubDate>
-      
-      <guid>https://ponkore.org/tags/hugo/</guid>
       <description></description>
     </item>
     
